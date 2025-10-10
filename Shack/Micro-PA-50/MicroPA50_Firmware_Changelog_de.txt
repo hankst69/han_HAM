@@ -1,0 +1,74 @@
+
+6. Dezember 2023: V2.8.5
+Die 30-m- und 15-m-Bänder (BYP) sind nun standardmäßig deaktiviert. Durch achtmaliges Drücken der Fn-Taste werden die 30-m- und 15-m-Bänder aktiviert. Der Status wird aufgezeichnet, und nach dem Aus- und Wiedereinschalten ist keine weitere Bedienung erforderlich.
+Der uneingeschränkte Modus wurde durch achtmaliges Drücken der Fn-Taste aktiviert.
+Die serielle Schnittstelle wurde reduziert, um den Codeumfang zu reduzieren.
+Unnötige serielle Schnittstelle wurde entfernt, um den Codeumfang zu reduzieren.
+Einige Codeteile wurden optimiert, um den Codeumfang zu reduzieren.
+
+18. November 2023: V2.8.3
+Das Bandwechselprotokoll ist standardmäßig auf xiegu eingestellt.
+Die Ausgabe der seriellen UUID-Schnittstelle wurde in die erste Zeile geändert.
+
+11. November 2023: V2.8.2
+Die Frequenzlesezeiten wurden auf 2 geändert, um den Lesevorgang zu beschleunigen.
+Wenn die Leistung 50 W überschreitet und nicht innerhalb von 10 Sekunden auf 50 W oder weniger reduziert wird, wird eine Schutzfunktion aktiviert.
+Die Schutzfunktion für ein SWR über 3 bei einer Leistung unter 10 W wurde auf über 2,5 geändert.
+
+8. November 2023: V2.8.1
+Ab dieser Version werden Nebenversionsnummern verwendet.
+Sobald die Temperatur die maximale Schutztemperatur überschreitet, müssen Sie warten, bis die Temperatur auf 40 Grad gesunken ist, bevor Sie das Gerät weiter verwenden können.
+Wenn die Leistung 50 W überschreitet und nicht innerhalb von 30 Sekunden auf 50 W reduziert wird, ist das Gerät geschützt.
+
+28.10.2023: V2.8
+Ein Summerschalter wurde hinzugefügt. Drücken Sie ihn viermal schnell hintereinander, um ihn umzuschalten. Die Einstellung wird nicht gespeichert, und der Summer ist nach dem Aus- und Wiedereinschalten standardmäßig eingeschaltet.
+Die Anzeige „NL“ im unbegrenzten Modus wurde auf „N“ geändert, um stattdessen das Symbol zum Deaktivieren des Lautsprechers anzuzeigen.
+
+15.10.2023: V2.7
+Ein Problem wurde behoben, bei dem die 50-W-Piepton-Erinnerung gelegentlich fehlschlug.
+
+10. Oktober 2023: V2.6
+1. Die Spannungserkennung wird nun auf zwei Dezimalstellen gerundet, um eine genaue Spannungsanzeige zu gewährleisten.
+2. Ein Problem mit SWR-Erkennungsfehlern im 17-m- und 15-m-Band wurde behoben.
+3. Sie können die SWR-Erkennung im 17-m- und 21-m-Band jetzt durch siebenmaliges Drücken der FN-Taste deaktivieren. Der Status wird nicht aufgezeichnet, und die SWR-Erkennung wird nach dem Aus- und Wiedereinschalten fortgesetzt.
+4. Bei einer Leistung von über 50 W ertönt ein Summer, sodass Benutzer die Leistung sofort reduzieren können.
+5. Der Summer wird beim Umschalten von Funktionen im Alarmzustand ausgeschaltet.
+6. Der Begrüßungsbildschirm des Micro PA50+ unterstützt jetzt einen Anzeigefrequenzbereich von 3,5–30 MHz.
+7. Die Funktion zur Aufzeichnung abnormaler Spannungen wurde entfernt, um Codespeicherplatz freizugeben.
+
+12. August 2023: V2.5
+Die Startbreite des dynamischen Balkens wurde auf 2 festgelegt.
+Die Breite des Peak-Hold-Balkens wurde auf 1 geändert und die Wartezeit um die Hälfte reduziert.
+Der Code ist sowohl mit PA50 als auch mit PA50+ kompatibel.
+
+12. August 2023: V2.3
+Optimierung der Peak-Hold-Anzeigemethode.
+Optimierter Code zur Reduzierung des Code-Speicherplatzbedarfs.
+
+05.08.2023: V2.2
+Die Schaltflächenauswahlfunktion wurde so geändert, dass sie im Hauptprogramm angezeigt wird, um ein Einfrieren durch Tastendruck zu verhindern.
+
+24. April 2023: V2.1
+Die Art und Weise, wie verschiedene Ausnahmeinformationen aufgezeichnet werden, wurde angepasst.
+Einige Erkennungsmethoden wurden optimiert.
+
+19. April 2023: V2.0
+Der Temperaturschutzwert wurde auf 60 °C geändert.
+Der Leistungskalibrierungsparameter wurde auf Prozentkalibrierung geändert, Befehl F1000 auf 100,0 % (Hinweis: Diese Kalibrierung gilt für die Vorwärtsleistung. Nicht ohne Gerät ändern).
+Der Stehwellenkalibrierungsparameter wurde auf Prozentkalibrierung geändert, Befehl R1000 auf 100,0 % (Hinweis: Diese Kalibrierung gilt für die Rückwärtsleistung. Nicht ohne Gerät ändern).
+Ein Problem wurde behoben, bei dem das manuelle Umschalten auf das 6-m-Band nach einem fehlerhaften Umschalten über das Bandsteuerkabel einen Aus- und Wiedereinschalten erforderte.
+Der Standardwert wurde hinzugefügt, nachdem Kalibrierungsdaten aufgrund einer falschen Konfiguration verloren gegangen waren.
+
+7. Februar 2023: V1.9
+Die maximale Software-Schutzspannung wurde auf 17,5 V geändert. Hinweis: Bei Verwendung älterer Hardware mit einer Versorgungsspannung über 15 V ersetzen Sie die 15-V-TVS-Überspannungsschutzdiode durch eine 18-V-Diode. Sofern die Versorgungsspannung 14,5 V nicht überschreitet, sind keine Änderungen erforderlich.
+Aktivieren Sie die Stehwellenschutzfunktion im uneingeschränkten Modus (Death Mode) erneut.
+
+4. Oktober 2022: V1.8
+Spitzenleistungs- und Stehwellenhaltefunktionen wurden hinzugefügt, um die Leistungs- und Stehwellenwerte im SSB-Modus besser anzuzeigen. Drücken Sie die Funktionstaste sechsmal schnell, um zwischen Normal- und Spitzenwerthaltemodus zu wechseln.
+Leistungen unter 10 W mit einem Stehwellenverhältnis größer als 3 sind geschützt, während Leistungen über 10 W mit einem Stehwellenverhältnis größer als 2 geschützt sind.
+Der Code wurde optimiert, um Fehlalarme bei der Stehwellenerkennung zu reduzieren.
+
+29. September 2022: V1.7
+Unterstützung für das XIEGU-Bandwechselprotokoll hinzugefügt. Der Wechsel zwischen ICOM- und XIEGU-Modus erfolgt durch fünfmaliges schnelles Drücken der Funktionstaste.
+Der lineare rekursive SWR-Gewichtswert wurde auf 65 geändert.
+Der Stehwellenschutz im „Death Mode“ wurde deaktiviert.
