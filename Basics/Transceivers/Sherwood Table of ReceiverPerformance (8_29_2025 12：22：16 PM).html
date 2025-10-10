@@ -1,0 +1,4339 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> <html style><!--
+ Page saved with SingleFile 
+ url: http://www.sherweng.com/table.html 
+ saved date: Fri Aug 29 2025 12:22:16 GMT+0200 (Central European Summer Time)
+--><meta charset=utf-8>
+<meta name=keywords content="Sherwood Engineering, ham radio, Drake, amateur radio, SE-3 Synchronous AM Detector, SE-3, AM Detector, se3, se3 specs, se3 specifications, se-3 specs, se-3 specifications">
+<title>Receiver Test Data</title>
+<style>:root{--sf-img-2: url("data:image/gif;base64,R0lGODlhRQCrAPcAAAAAAP///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAEALAAAAABFAKsAAAj+AAMIHEiwoMGDCBMqXMiwocOHECNKnEixosWJAC5qxAgg48aPDTt2BEkyociRJVMKPClSZUqWLV2ChBlTpkaaNW1SxHlSZ0WePX1KBJpTqEOiHo0+RJpUaUikBJs6NQg1qtSpK6sOLIqVqVWuTr1uZYl1LNCCNMuKNUt26toAZ8NqhRtX6Fu6dXW+vStz71ybf/mqvCv45dzChol+zQtY8WKedg8jJunXsc/KjF0S/qtZsmW9njN3Zjx5ZmjRifOWNv159cbNn/uexmkUM+TIrTkPDqw79e2ssWXnDr47tuubs9PiVt3bt3K2vy+TJt6YNvToy9sCZ8q9+3O8MK/+ex/P/XFQ8OTTJ0eJXr3777/fy7e+Xfv8++fb18TP3/x+/vf5x553btGnH2rFhScggpRNR2B12B3I4EXloTVegpxdWBJ5Fj7Imof1HbeUhgtGaFF6VIH4GoclGrgiiSE2txOMMVI3I40SmvgTiy0q+GF3HQLZII08vqhiji5SWGSNE0aEYpAVfvSkeE06uSSS+f0YJZXaOceXjVIuWSVyRH4HoZDmyYVjltltmVVZWJp5lZpHwhmnj3b2aGaed7LJZ5183hkoQiKqNWaeOg7KpaIKJcqoo4pCOqikgVL6Z5KMLprpQZYiiumjh3YFpqejGlpom5+SWqqoMpraKqt4qxb4KqyhorpnpafaiuekbuI6q6yxKoVmpLlK9yudtRp7bG3Fgrasrrv6GqywzZ7ZKbPPQuvnpdk62621qdrZq7TJeluuuddiO62224pbrXDrKhsvuuG6Oy+7m5aYL5TtghrtvrcC3G++AxPM3r6EIqzwwgw3vGlAADs=");--sf-img-3: url("data:image/gif;base64,R0lGODlh2QElAJEAAAAAAP///2A5E////yH5BAEAAAMALAAAAADZASUAAAL/nI+py+0Po5y02ouz3rz7D4biuAimSabqyrbuC8fUecoSjee6kdv+P6NldEQUEAcE9ZINIjNRjCIHy6c1Oa1InUfhVVP98nbXrXnsFatf2YmZ/Guv3fIv1/qWomvzvqr+kBdmA+jXVPh0xyQYtWdkCPmBWMKY5jMZiWCppojVeYOZKQoRelA0iprK8HnJGjEYkvXYJQA2G9QICkua+3rGexqXdksZrNsbCKe3YqyV57DlSOW1C6eJuAzsCvV2vOmNzN1tOvy8Gi1+2jNVZV78q10O/749bY07np67fG//7U8MYDh9zRQwAlfrgiB66KQ5angNYjd07RYSzJasYr6I/xgZ8nFmkdyvbLA69TvocaBAiNB2+XL3UKI8mCvvPKMoK2TMjoc0bqzZ7yJNoM0skpRTsGQlg0uFqkwZEuVOjDl1Gr3Jr6q7SgnjfZRK1KVIrrOUav14Di1Bp2s5brp3clDQUmHh1VFmFu3ZrjHH/nMb0C9fwH6Z7h3s0Ouju0vApiVrpBq7UpPCJEVaCG9my5vVPoZc2DCfuW32il4cSqzgz10B+QxM1+a/xqpfghbI8KFtxIQFz7wVVHdfj6s/7yYbui1pS6ZPJ6yNO6Nn4QBzrzR+HPV02n8tQEYhmdrW7tHDFj9vvXx6sbG/t549+S/nr66RoLwq/6x19uQBa/8PuA50SjgRXg1NYcIdeL8NptprvJ3H33RQjbddfBLO9x+A9rkXjUuv7YdNf769V6EQAsbyk24H9pfgcyYyRp6DLS3YU2DOPRgPiPkxR6NzdXGoXm/V+RikWwiRqOGLIo6QIm4rSrhai0U22Bxr6OlzpELwibejXj2uxWGHndFX4mghQilUcoSdiCJLwt0n4lEGwoimjDVmiCNd13m3pZldlvXlmvhNNGaGOkLZ3oc+silJky3iaKR0mrESXHlU8vgnHYwm1ttyXpJZZmSpjfonkrw9+mCi+hG5KQcE1sclmmqyVlpBV/qGK3G3cirpkpEqVyCgoCbpp6xFEoksrMP/Egupf6YeauyM7h1rp7TNTuVUqnmpFRdmjvUaVZ94AlfrstDauKuQbQ257ieq/nYuuuxOdVCwpmYV7WWVIuesm01p+q+y48pkbrLmLOThquv++O6w6x38FpDUlotTvibV82+/ttJb6Z0UMstXxlWq+7EeCcOLLMO+yhZqyON4e9vEEVcs74g3NqtTtpfOA3DJ6XGM4b0/M6yxkhcqrK7KNe80K3VAi8ptzE7fOtLK9l77tGLQDYVPQwKfutHIVLN0xskOpzxix842LXMweqriydvDwc2M3HTHYPfdeu/NN5N5951Cq4APTnjh1i5teOCCJ85445F867gHGUdOeeWjKUBu+RA5Z85553Zw7TmfTYZOeuls8Gy66G6mznrrrr8Oe+yyz067AwUAADs=")}</style><style><!--.style1{color:#FF0000;font-weight:bold;font-style:italic}.style2{color:#008080;font-weight:bold;font-style:italic}.style9{font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-size:14px}.style10{font-size:x-large}.style15{font-family:Arial,Helvetica,sans-serif;font-weight:bold;font-style:italic}.style16{font-family:Arial,Helvetica,sans-serif}--></style>
+<meta name=referrer content=no-referrer><link rel=canonical href=http://www.sherweng.com/table.html><meta http-equiv=content-security-policy content="default-src 'none'; font-src 'self' data:; img-src 'self' data:; style-src 'unsafe-inline'; media-src 'self' data:; script-src 'unsafe-inline' data:; object-src 'self' data:; frame-src 'self' data:;"><body style=color:rgb(0,0,0);background-image:url(data:image/jpeg;base64,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) alink=#800000 link=#800000 vlink=#800000>
+<font> </font>
+<p align=center><a href=http://www.sherweng.com/index.html style=text-decoration:none><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="69" height="171"><rect fill-opacity="0"/></svg>' alt="Sherwood Engineering Incorporated" align=left border=0 height=95 style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-2)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></a><a href=http://www.sherweng.com/index.html style=text-decoration:none><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="473" height="37"><rect fill-opacity="0"/></svg>' alt="Sherwood Engineering Incorporated" align=middle border=0 style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-3)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></a><br>
+<font color=#663300 face=Arial size=3><b>
+1268 South Ogden Street Denver, Colorado 80210 USA
+<br>
+<a href=mailto:rob@sherweng.com>email</a> &nbsp; &nbsp; Phone: </b></font>
+<font color=#008080 face="Arial Black" size=3>303-722-2257</font><br>
+9 a.m. - 5 p.m. MST Monday - Friday
+</p>
+<table border=0 cellpadding=0 cellspacing=0 width=100%>
+ <tbody>
+ <tr>
+ <td colspan=3 align=center valign=top> <br>
+ <table align=center border=3 width=100%>
+ <tbody>
+ <tr>
+ <td align=center bgcolor=#cc9966 width=35%><span class=style9><b> <a href=http://www.sherweng.com/indepth.html#features style=text-decoration:none>SE-3 Features</a> </b></span></td>
+ <td align=center bgcolor=#cc9966 width=30%><span class=style9><b> <a href=http://www.sherweng.com/listen_se3.html style=text-decoration:none>Hear the Difference</a> </b></span></td>
+ <td align=center bgcolor=#cc9966 width=35%><span class=style9><b> <a href=http://www.sherweng.com/interfac.html style=text-decoration:none>Interface Shortwave Radio to SE-3</a> </b></span></td>
+ </tr>
+ <tr>
+ <td align=center><span class=style9><b> <a href=http://www.sherweng.com/index.html style=text-decoration:none>Sherwood Engineering Inc. Home Page</a>
+ </b></span></td>
+ <td align=center><span class=style9><b> <a href=http://www.sherweng.com/radios.html style=text-decoration:none>Short Wave Listener Catalogue</a> </b></span></td>
+ <td align=center><span class=style9><b> <a href=http://www.sherweng.com/ham.html style=text-decoration:none>Amateur
+Radio Products</a> </b></span></td>
+ </tr>
+ </tbody>
+ </table>
+ </td>
+ </tr>
+ <tr>
+ <td colspan=3 align=center valign=top>&nbsp;</td>
+ </tr>
+ <tr>
+ <td colspan=2 height=28 valign=top>&nbsp;</td>
+ <td rowspan=3>
+ <p align=center><strong><font color=#000000 face=Arial size=3> </font></strong></p>
+ <p align=center><strong><font color=#000000 face=Arial size=3><strong><font color=#000000 face=Arial size=3> </font></strong></font></strong></p>
+ <br>
+ </td>
+ </tr>
+ <tr bordercolor=#000000>
+ <td colspan=3 align=center bgcolor=#cc9966>
+ <span class=style10>
+ 
+ <font face="Arial Narrow" size=5 color=#000000> 
+ <a href=javascript:void(0) style=text-decoration:none> 
+ <font color=#000000 face=Arial>
+ <b> &nbsp; Look in on part of SEI's Laboratory &nbsp; </b>
+ </font></a></font></span><font face="Arial Narrow" size=5 color=#000000>
+ </font></td>
+ </tr>
+ <tr>
+ <td colspan=2 valign=top>&nbsp;</td>
+ </tr> 
+ <tr>
+ <td colspan=2 valign=top width=50>&nbsp;</td>
+ <td width=50%>&nbsp;</td>
+ </tr>
+ <tr>
+ <td colspan=3 align=center valign=top><font color=#008080 face="Arial Black" size=6>Receiver Test Data</font>
+ <h4 class=center>(Terms Explained: <a href=http://www.sherweng.com/documents/TermsExplainedSherwoodTableofReceiverPerformance-RevG2.doc></a>
+ <a href=http://www.sherweng.com/documents/TermsExplainedSherwoodTableofReceiverPerformance-RevG3.pdf>PDF</a>)</h4>
+ <span class=style1><font size=3>Sorted by Third-Order Dynamic
+Range Narrow Spaced - or- ARRL RMDR (Reciprocal Mixing Dynamic Range)
+if Phase Noise Limited<br>
+<br>
+The term RMDR has only existed since 2012. To convert column LO Noise to RMDR, subtract 27 dB. Example: an LO Noise of 127 dB would be an RMDR value of 100 dB<br> 
+ <br>
+Note: The term blocking only applies to a superhet radio. For a direct sampling radio the value in the blocking column is the ADC overload point reference receiver noise floor.
+<br>
+<br>
+ <font color=#cc0000>Updated 2 June 2025. Added Yaesu FTX-1 Optima</font></font></span></td>
+ </tr>
+ </tbody>
+</table>
+<table border=1 cellpadding=4 cellspacing=0 width=100%>
+ <tbody>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Spacing<br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>LO Noise Corrected
+05/10/19</span><br>
+Yaesu<br>
+FTdx-101D/MP</td>
+<td align=center>-127<br>
+-136<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>4.5<br>
+1.6<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.58<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>&gt;147</td>
+<td align=center>0.60<br>
+0.20<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.12<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td> 
+ <td align=center>154<br>
+155</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>A Trk Presel</td>
+ <td align=center>&gt;115</td>
+ <td align=center>110</td>
+ <td align=center>20</td>
+ <td align=center>110</td>
+ <td align=center>2</td>
+ </tr>
+ 
+<tr>
+ <td align=center><span class=style1>Added
+12/30/20</span><br>
+Yaesu<br>
+FTdx10</td>
+<td align=center>-126<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-140<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>4.2<br>
+1.46<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.54<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>141</td>
+<td align=center>0.63<br>
+0.21<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.15<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td> 
+ <td align=center>152<br>
+153</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Half Octave &amp; Bandpass</td>
+ <td align=center>105</td>
+ <td align=center>107</td>
+ <td align=center>20</td>
+ <td align=center>107</td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center><span class=style1>Added
+10/01/22</span><br>
+Yaesu<br>
+FT-710</td>
+<td align=center>-127<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-140 <a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>4.0<br>
+1.40<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.38<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>129</td>
+<td align=center>0.66<br>
+0.23<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.13<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td> 
+ <td align=center>150<br>
+154</td>
+ <td align=center>10<br>
+30</td>
+ <td align=center>B Bandpass</td>
+ <td align=center>108</td>
+ <td align=center>107</td>
+ <td align=center>20</td>
+ <td align=center>107</td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 02/11/18</span><br>
+Icom<br>
+IC-R8600<br>
+Second sample<br>
+S/N 02001177
+</p></td>
+ <td align=center>-131<br>
+-142<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-130<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>2.40<br>
+0.67<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+ <td align=center>3</td>
+ <td align=center>125</td>
+ <td align=center>0.40<br>
+0.12<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.49<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>144<br>
+148</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Half Octave</td>
+ <td align=center>&gt;100</td>
+<td align=center>109<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+88<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>107<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+88<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 11/10/15</span><br>
+Elecraft<br>
+K3S</p></td>
+ <td align=center>-135<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-145<a href=#key style=text-decoration:none><sup><b>10</b></sup></a></td>
+ <td align=center>1.5<br>
+0.45<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>150</td>
+ <td align=center>0.27<br>
+0.20<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.08<a href=#key style=text-decoration:none><sup><b>10</b></sup></a></td>
+ <td align=center>144<br>
+146</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>110</td>
+ <td align=center>107<a href=#key style=text-decoration:none><sup><b>q</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>106<a href=#key style=text-decoration:none><sup><b>p</b></sup></a><br>
+106<a href=#key style=text-decoration:none><sup><b>q</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 3/17/17</span><br>
+Elecraft K3S<br>
+2nd Sample<br> 
+10 meter data</p></td>
+ <td align=center>-135<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-145<a href=#key style=text-decoration:none><sup><b>10</b></sup></a></td>
+ <td align=center>1.5<br>
+0.45<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>150</td>
+ <td align=center>0.27<br>
+0.20<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.08<a href=#key style=text-decoration:none><sup><b>10</b></sup></a></td>
+ <td align=center>144<br>
+146</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>110</td>
+ <td align=center>106<a href=#key style=text-decoration:none><sup><b>ah</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>105<a href=#key style=text-decoration:none><sup><b>ah</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+02/23/15</span><br>
+Elecraft <br>
+K3 (RX Gain Recal)<br>
+New Synthesizer</td>
+ <td align=center>-136<br>
+-139<a href=#key style=text-decoration:none><sup><b>bq</b></sup></a></td>
+ <td align=center>1.0<br>
+0.3<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>141</td>
+ <td align=center>0.27<br>
+0.20<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>145<br>
+147</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass </td>
+ <td align=center>108</td>
+ <td align=center>105<a href=#key style=text-decoration:none><sup><b>q</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>107<a href=#key style=text-decoration:none><sup><b>p</b></sup></a><br>
+104<a href=#key style=text-decoration:none><sup><b>q</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 04/25/16</span><br>
+Icom<br>
+IC-7851</p></td>
+ <td align=center>-123<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>8.5<br>
+1.85<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+1.16<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>149</td>
+ <td align=center>0.65<br>
+0.16<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.11<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>148<br>
+153</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>A Trk Presel</td>
+ <td align=center>100</td>
+ <td align=center>110<a href=#key style=text-decoration:none><sup><b>aa</b></sup></a></td>
+ <td align=center>20</td>
+<td align=center>105<a href=#key style=text-decoration:none><sup><b>aa</b></sup></a><br>
+ </td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+10/15/18</span><br>
+Kenwood<br>
+TS-890S</td>
+<td align=center>-131<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>2.1<br>
+0.53<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.14<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>&gt;151</td>
+<td align=center>0.39<br>
+0.13<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.10<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td> 
+ <td align=center>155<br>
+156</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Half Octave </td>
+ <td align=center>&gt;118</td>
+ <td align=center>106</td>
+ <td align=center>20</td>
+ <td align=center>105</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+10/02/12</span><br>
+Hilberling <br>
+PT-8000A <br>
+Hardware Rev 2.00</td>
+ <td align=center>-128<br>
+-141<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>5.4<br>
+1.0<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>142</td>
+ <td align=center>0.45<br>
+0.11<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>144<br>
+149</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>A Trk Presel </td>
+ <td align=center>100</td>
+ <td align=center>105</td>
+ <td align=center>20</td>
+ <td align=center>105<a href=#key style=text-decoration:none><sup><b>w</b></sup></a><br>
+ </td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+08/10/12</span><br>
+Elecraft <br>
+KX3 </td>
+ <td align=center>-123<br>
+-138<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>12<br>
+1.3<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>138</td>
+ <td align=center>0.9<br>
+0.09<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>144</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>110</td>
+ <td align=center>105</td>
+ <td align=center>20</td>
+ <td align=center>104<a href=#key style=text-decoration:none><sup><b>t</b></sup></a><br>
+96<a href=#key style=text-decoration:none><sup><b>u</b></sup></a><br>
+65<a href=#key style=text-decoration:none><sup><b>v</b></sup></a>
+ </td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center><span class=style1>Added
+06/24/24</span><br>
+Apache <br>
+ANAN-G2</td>
+<td align=center>-131<br>
+-131<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>1.0 adjustable<br>
+2.2<a href=#key style=text-decoration:none><sup><b>ae</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>129</td>
+<td align=center>0.40<br>
+0.40<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br>
+0.14<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td> 
+ <td align=center>144<br>
+148</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass </td>
+ <td align=center>110</td>
+ <td align=center>103<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br></td>
+ <td align=center>20</td>
+ <td align=center>103<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+02/22/18</span><br>
+Apache <br>
+ANAN-7000DLE</td>
+<td align=center>-131<br>
+-131<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br>
+-140<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>1.0 adjustable<br>
+2.2<a href=#key style=text-decoration:none><sup><b>ae</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>126</td>
+<td align=center>0.43<br>
+0.43<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br>
+0.16<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td> 
+ <td align=center>140<br>
+143</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass </td>
+ <td align=center>110</td>
+ <td align=center>103<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br></td>
+ <td align=center>20</td>
+ <td align=center>103<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br></td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 05/26/21</span><br>
+Elecraft<br>
+K4D<br>
+S/N 00122</p></td>
+ <td align=center>-121<br>
+-132<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-137<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>11<br>
+3.0<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+1.4<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td> 
+ <td align=center>3</td>
+ <td align=center>128</td>
+ <td align=center>1.5<br>
+0.44<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.24<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>148<br>
+155</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>110</td>
+ <td align=center>101<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br></td>
+ <td align=center>20</td>
+ <td align=center>101<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added 12/01/10</span><br>
+Yaesu <br>
+FTdx-5000D </td>
+ <td align=center>-123<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>4.6<br>
+1.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.33<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>127<a href=#key style=text-decoration:none><sup><b>s</b></sup></a></td>
+ <td align=center>1.1<br>
+0.27<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.13<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>135</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>104</td>
+ <td align=center>20</td>
+ <td align=center>101<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+2/15/08</span><br>
+Elecraft <br>
+K3 </td>
+ <td align=center>-130<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.1<br>
+0.6<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>140<a href=#key style=text-decoration:none><sup><b>s</b></sup></a></td>
+ <td align=center>0.33<br>
+0.19<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>138</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>105</td>
+ <td align=center>104</td>
+ <td align=center>20</td>
+ <td align=center>101<a href=#key style=text-decoration:none><sup><b>p f</b></sup></a><br>
+96<a href=#key style=text-decoration:none><sup><b>q a</b></sup></a><br>
+95<a href=#key style=text-decoration:none><sup><b>r</b></sup></a>
+ </td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 03/27/19</span><br>
+FlexRadio<br>
+6400</p></td>
+ <td align=center>-112<br>
+-127<a href=#key style=text-decoration:none><sup><b>b3</b></sup></a><br>
+-136<a href=#key style=text-decoration:none><sup><b>b4</b></sup></a></td>
+ <td align=center>9<br>
+1.4<a href=#key style=text-decoration:none><sup><b>b3</b></sup></a><br>
+0.44<a href=#key style=text-decoration:none><sup><b>b4</b></sup></a></td> 
+ <td align=center>3</td>
+ <td align=center>119</td>
+ <td align=center>4.0<br>
+0.63<a href=#key style=text-decoration:none><sup><b>b3</b></sup></a><br>
+0.22<a href=#key style=text-decoration:none><sup><b>b4</b></sup></a></td>
+ <td align=center>145<br>
+146</td>
+ <td align=center>10<br>
+20</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>115</td>
+ <td align=center>100<a href=#key style=text-decoration:none><sup><b>b3</b></sup></a></td>
+ <td align=center>20&amp;2</td>
+ <td align=center>100<a href=#key style=text-decoration:none><sup><b>b3</b></sup></a></td>
+ <td align=center>20&amp;2</td>
+ </tr>
+<tr>
+ <td align=center><span class=style1>Edited
+11/16/24</span><br>
+FlexRadio Systems <br>
+6700 2017 Data<br>
+Hardware Updated</td>
+ <td align=center>-118<br>
+-135<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>3.0<br>
+1.0<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>Var</td>
+ <td align=center>130 preamp Off</td>
+ <td align=center>2.0<br>
+0.25<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>145<br>
+155</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass </td>
+ <td align=center>115</td>
+ <td align=center>99</td>
+ <td align=center>20&amp;2</td>
+ <td align=center>99<a href=#key style=text-decoration:none><sup><b>b0</b></sup></a><br>
+ </td>
+ <td align=center>20&amp;2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 05/14/18</span><br>
+FlexRadio<br>
+6600M <br>
+PLL update &amp; 2 Hardware Upgrades</p></td>
+ <td align=center>-111<br>
+-126<a href=#key style=text-decoration:none><sup><b>b3</b></sup></a><br>
+-136<a href=#key style=text-decoration:none><sup><b>b4</b></sup></a></td>
+ <td align=center>13<br>
+2.0<a href=#key style=text-decoration:none><sup><b>b3</b></sup></a><br>
+0.35<a href=#key style=text-decoration:none><sup><b>b4</b></sup></a></td> 
+ <td align=center>3</td>
+ <td align=center>116</td>
+ <td align=center>4.5<br>
+0.78<a href=#key style=text-decoration:none><sup><b>b3</b></sup></a><br>
+0.26<a href=#key style=text-decoration:none><sup><b>b4</b></sup></a></td>
+ <td align=center>144<br>
+148</td>
+ <td align=center>10<br>
+20</td>
+ <td align=center>A- Band Pass</td>
+ <td align=center>115</td>
+ <td align=center>102<a href=#key style=text-decoration:none><sup><b>b0</b></sup></a></td>
+ <td align=center>20&amp;2</td>
+ <td align=center>99<a href=#key style=text-decoration:none><sup><b>b3</b></sup></a><br>
+99<a href=#key style=text-decoration:none><sup><b>aj</b></sup></a></td>
+ <td align=center>20&amp;2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+08/31/16</span><br>
+Apache <br>
+ANAN-200D <br>
+Tested 12/15/2015</td>
+ <td align=center>-133<br>
+-132<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a></td>
+ <td align=center>1.0 adjustable<br>
+3.0<a href=#key style=text-decoration:none><sup><b>ae</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>123</td>
+ <td align=center>0.30<br>
+0.37<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a></td>
+ <td align=center>131<br>
+137</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass </td>
+ <td align=center>95</td>
+ <td align=center>99</td>
+ <td align=center>20</td>
+ <td align=center>99<a href=#key style=text-decoration:none><sup><b>af</b></sup></a><br>
+77<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br>
+64<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a>
+ </td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Updated
+7/2/09</span><br>
+Perseus <br>
+ </td>
+ <td align=center>-123<br>
+-125<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>0.15<br>
+0.1<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>125</td>
+ <td align=center>0.8<br>
+0.6<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>147</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>109<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>99</td>
+ <td align=center>20</td>
+ <td align=center>99</td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 2/24/25</span><br>
+Icom<br>
+IC-7760<br>
+S/N 12001144
+</p></td>
+ <td align=center>-133<br>
+-141<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-142<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+-128<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>2.65<br>
+1.40<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+1.30<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>122<br>
+119<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>0.32<br>
+0.12<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.10<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+0.50<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>146<br>
+148</td>
+ <td align=center>5<br>
+10</td>
+ <td align=center>A Trk Presel</td>
+ <td align=center>108</td>
+<td align=center>99<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+ <td align=center>20</td>
+ <td align=center>99<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 12/23/17</span><br>
+Icom<br>
+IC-7610<br>
+S/N 12001056
+</p></td>
+ <td align=center>-132<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-142<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+-129<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>2.7<br>
+1.20<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+1.16<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>122<br>
+119<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>0.36<br>
+0.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.125<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+0.51<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>146<br>
+149</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>A Trk Presel</td>
+ <td align=center>110</td>
+<td align=center>98<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+ <td align=center>20</td>
+ <td align=center>98<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 12/23/17</span><br>
+Icom<br>
+IC-R8600<br>
+S/N 04001188
+</p></td>
+ <td align=center>-132<br>
+-142<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-130.5<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>2.40<br>
+0.67<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+ <td align=center>3</td>
+ <td align=center>125</td>
+ <td align=center>0.40<br>
+0.12<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.49<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>144<br>
+148</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Half Octave</td>
+ <td align=center>105</td>
+<td align=center>98<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+78<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>98<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+78<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 02/11/18</span><br>
+Icom<br>
+IC-7300<br>
+Second Sample<br>
+S/N 02012272</p></td>
+ <td align=center>-133<br>
+-140.5<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141.5<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+-132<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>1.9<br>
+0.85<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.50<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>123</td>
+ <td align=center>0.30<br>
+0.12<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.11<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+0.35<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>137<br>
+147</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>&gt;100</td>
+<td align=center>106<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+84<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>97<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+84<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+3/17/17</span><br>
+FlexRadio Systems <br>
+6700 <br>
+2nd Sample 10 meters</td>
+ <td align=center>-116<br>
+-134<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>3.0<br>
+1.0<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>Var</td>
+ <td align=center>130 preamp Off</td>
+ <td align=center>2.0<br>
+0.25<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>145<br>
+155</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass </td>
+ <td align=center>115</td>
+ <td align=center>99</td>
+ <td align=center>20&amp;2</td>
+ <td align=center>96<a href=#key style=text-decoration:none><sup><b>ag</b></sup></a><br>
+ </td>
+ <td align=center>20&amp;2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 05/21/18</span><br>
+Icom<br>
+IC-7610<br>
+S/N 12001276<br>
+Second Sample
+</p></td>
+ <td align=center>-132<br>
+-139<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+-128<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>2.8<br>
+1.20<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+1.12<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>122<br>
+119<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>0.37<br>
+0.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.13<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+0.53<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>145<br>
+&gt;148</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>A Trk Presel</td>
+ <td align=center>110</td>
+<td align=center>96<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+76<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>96<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+76<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+2/15/08</span><br>
+FlexRadio Systems <br>
+FLEX-5000A </td>
+ <td align=center>-123<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.0<br>
+0.5<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>123<a href=#key style=text-decoration:none><sup><b>s</b></sup></a></td>
+ <td align=center>1.3<br>
+0.3<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>123</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>98</td>
+ <td align=center>96</td>
+ <td align=center>20</td>
+ <td align=center>96</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+4/16/06</i></b></font><br>
+Ten-Tec<br>
+Orion II</td>
+ <td align=center>-125<br>
+-133<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.7<br>
+0.65<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>130</td>
+ <td align=center>0.75<br>
+0.3<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>126</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>100<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>95<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>95<a href=#key style=text-decoration:none><sup><b>i</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ 
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 04/25/16</span><br>
+Icom<br>
+IC-7300<br>
+S/N 02001408</p></td>
+ <td align=center>-133<br>
+-141<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-142<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+-122<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>1.9<br>
+0.85<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.50<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>123</td>
+ <td align=center>0.27<br>
+0.11<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.10<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a><br>
+1.0<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a></td>
+ <td align=center>137<br>
+147</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>&gt;100</td>
+<td align=center>103<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+81<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>94<a href=#key style=text-decoration:none><sup><b>ab</b></sup></a><br>
+81<a href=#key style=text-decoration:none><sup><b>ac</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+<tr>
+ <td align=center><font color=#008080><b><i>Updated
+4/17/06</i></b></font><br>
+Ten-Tec<br>
+Orion</td>
+ <td align=center>-127<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>0.8</td>
+ <td align=center>3</td>
+ <td align=center>137</td>
+ <td align=center>0.6<br>
+0.25<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>130</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>100<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>96</td>
+ <td align=center>20</td>
+ <td align=center>93</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+12/09/14</span><br>
+Kenwood <br>
+TS-590SG <br>
+Down Conversion Mode</td>
+ <td align=center>-127<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.2<br>
+0.65<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>137</td>
+ <td align=center>0.42<br>
+0.17<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>139<br>
+141</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Bandpass </td>
+ <td align=center>100<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>104</td>
+ <td align=center>20</td>
+ <td align=center>92<a href=#key style=text-decoration:none><sup><b>f</b></sup></a><br>
+ </td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 06/22/13</span><br>
+Ten-Tec<br>
+Argonaut VI</p>
+ </td>
+ <td align=center>-125<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3.2<br>
+0.75<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>127</td>
+ <td align=center>0.52<br>
+0.25<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>127<br>
+134</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>95<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>95</td>
+ <td align=center>20</td>
+ <td align=center>92<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 06/02/25</span><br>
+Yaesu<br>
+FTX-1 Optima<br> 
+S/N 5F020211</p></td>
+ <td align=center>-124<br>
+-134<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>4.5<br>
+1.4<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.4<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>129</td>
+ <td align=center>0.9<br>
+0.25<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.13<a href=#key style=text-decoration:none><sup><b>10</b></sup></a></td>
+ <td align=center>142<br>
+147</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>C Bandpass</td>
+ <td align=center>100</td>
+ <td align=center>91</td>
+ <td align=center>20</td>
+ <td align=center>91 </td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 08/15/19</span><br>
+Aerial-51<br>
+ALT-512</p>
+ </td>
+ <td align=center>-120<br>
+-136<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>9<br>
+0.75<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>122</td>
+ <td align=center>1.1<br>
+0.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>133<br>
+131</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>100</td>
+ <td align=center>91</td>
+ <td align=center>20</td>
+ <td align=center>91</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 11/10/10</span><br>
+Ten-Tec<br>
+Eagle</p>
+ </td>
+ <td align=center>-124<br>
+-132<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.5<br>
+0.6<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>129</td>
+ <td align=center>0.7<br>
+0.3<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>131<br>
+143</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>92<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>93</td>
+ <td align=center>20</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 8/20/09</span><br>
+FlexRadio Systems<br>
+FLEX-3000</p>
+ </td>
+ <td align=center>-123<br>
+-139<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.1<br>
+0.13<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>116<a href=#key style=text-decoration:none><sup><b>s</b></sup></a></td>
+ <td align=center>1.35<br>
+0.16<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>120</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center><span class=style1>
+Updated 3/21/17</span><br>
+FlexRadio Systems <br>
+6300 Second Sample<br>
+Preamp Updated</td>
+ <td align=center>-117<br>
+-136<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>3.0<br>
+1.0<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>Var</td>
+ <td align=center>125 preamp Off</td>
+ <td align=center>2.1<br>
+0.23<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>143<br>
+148</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>D High &amp; Low Pass </td>
+ <td align=center>110</td>
+ <td align=center>89</td>
+ <td align=center>20&amp;2</td>
+ <td align=center>89<a href=#key style=text-decoration:none><sup><b>ai</b></sup></a><br>
+ </td>
+ <td align=center>20&amp;2</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 11/07/20</span><br>
+Icom<br>
+IC-705<br> 
+S/N 12003232</p></td>
+ <td align=center>-127<br>
+-137<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-139<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>4.2<br>
+1.50<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.87<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>122</td>
+ <td align=center>0.67<br>
+0.20<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.16<a href=#key style=text-decoration:none><sup><b>10</b></sup></a></td>
+ <td align=center>138<br>
+142</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>C 0.8 Octave</td>
+ <td align=center>100</td>
+ <td align=center>89</td>
+ <td align=center>20</td>
+ <td align=center>88 </td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 12/30/10</span><br>
+Kenwood<br>
+TS-590S on 20 meters<br>
+Down-conversion Mode<br>
+For Up-Converson<br>
+see Narrow Spaced<br>
+at 76 dB</p>
+ </td>
+ <td align=center>-128<br>
+-137<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>1.8<br>
+0.5<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>144<a href=#key style=text-decoration:none><sup><b>s</b></sup></a></td>
+ <td align=center>0.43<br>
+0.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>140</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>92<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>104</td>
+ <td align=center>20</td>
+ <td align=center>88<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 02/26/11</span><br>
+FlexRadio Systems<br>
+FLEX-1500</p>
+ </td>
+ <td align=center>-112to-116<br>
+-120to-129<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-121to-136<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3.1<br>
+1.0<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.4<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>108</td>
+ <td align=center>2.8<br>
+1.4<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.3<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>131</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>95</td>
+ <td align=center>88</td>
+ <td align=center>20</td>
+ <td align=center>88</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 06/02/13</span><br>
+Kenwood<br>
+TS-990S on 20 meters<br>
+15 &amp; 12 meters<br>
+RMDR varies by band<br>
+17 meters is worst band<br>
+30 meters is best band</p>
+ </td>
+ <td align=center>-127<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-138<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>1.9<br>
+0.46<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>145</td>
+ <td align=center>0.75<br>
+0.17<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.13<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>138<br>
+150</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>A Trk Preselec</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>111</td>
+ <td align=center>20</td>
+ <td align=center>87<a href=#key style=text-decoration:none><sup><b>x</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center><span class=style1>
+1/12/17</span><br>
+FlexRadio Systems <br>
+6300<br>
+Preamp Updated</td>
+ <td align=center>-117<br>
+-136<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>3.0<br>
+1.0<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>Var</td>
+ <td align=center>125 preamp Off</td>
+ <td align=center>2.2<br>
+0.24<a href=#key style=text-decoration:none><sup><b>b2</b></sup></a></td>
+ <td align=center>143<br>
+148</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>D High &amp; Low Pass </td>
+ <td align=center>110</td>
+ <td align=center>86</td>
+ <td align=center>20&amp;2</td>
+ <td align=center>86<a href=#key style=text-decoration:none><sup><b>ak</b></sup></a><br>
+ </td>
+ <td align=center>20&amp;2</td>
+ </tr>
+<tr>
+ <td align=center><span class=style1>Added
+07/26/17</span><br>
+Elecraft <br>
+KX2</td>
+ <td align=center>-123<br>
+-136<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>31<br>
+3.4<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>N.A.</td>
+ <td align=center>1.2<br>
+0.25<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>132<br>
+129</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Bandpass </td>
+ <td align=center>90</td>
+ <td align=center>93</td>
+ <td align=center>20</td>
+ <td align=center>86</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 2/15/08</span><br>
+Icom<br>
+R9500</p>
+ </td>
+ <td align=center>-127<br>
+-130<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-135<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>1.1<br>
+0.25<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.16<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>119</td>
+ <td align=center>0.7<br>
+0.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.11<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>134</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>80</td>
+ <td align=center>110<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>85<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Drake<br>
+R-4C/CF-600/6</td>
+ <td align=center>-138</td>
+ <td align=center>0.7</td>
+ <td align=center>3</td>
+ <td align=center>130</td>
+ <td align=center>0.15</td>
+ <td align=center>135</td>
+ <td align=center>2.5</td>
+ <td align=center>A- Preselector</td>
+ <td align=center>130</td>
+ <td align=center>85</td>
+ <td align=center>20</td>
+ <td align=center>84</td>
+ <td align=center>2</td>
+ </tr>
+ 
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 12/13/2012</span><br>
+Yaesu<br>
+FTdx-3000</p>
+ </td>
+ <td align=center valign=top>-127<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-142<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center valign=top>3.8<br>
+1.0<br>
+0.36</td>
+ <td align=center valign=top>3</td>
+ <td align=center valign=top>132</td>
+ <td align=center valign=top>0.57<br>
+0.15<br>
+0.11</td>
+ <td align=center valign=top>127</td>
+ <td align=center valign=top>10</td>
+ <td align=center valign=top>B 0.5 Octave</td>
+ <td align=center valign=top>80</td>
+ <td align=center valign=top>105<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center valign=top>20</td>
+ <td align=center valign=top>82<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center valign=top>2</td>
+ </tr>
+ <tr>
+ <td align=center>AOR<br>
+AR-7030</td>
+ <td align=center>-122<br>
+-128<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.2</td>
+ <td align=center>3</td>
+ <td align=center>130</td>
+ <td align=center>0.5<br>
+0.22</td>
+ <td align=center>130</td>
+ <td align=center>10</td>
+ <td align=center>D Hi/Lo Pass</td>
+ <td align=center>90</td>
+ <td align=center>100</td>
+ <td align=center>20</td>
+ <td align=center>82</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+4/16/06</i></b></font><br>
+Icom<br>
+IC-765</td>
+ <td align=center>-134<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>5.0<br>
+1.7<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>143</td>
+ <td align=center>0.26</td>
+ <td align=center>130</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>95<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>102</td>
+ <td align=center>20</td>
+ <td align=center>81<a href=#key style=text-decoration:none><sup><b>f 
+j m</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+10/03/14</i></b></font><br>
+Icom<br>
+IC-703+</td>
+ <td align=center>-126<a href=#key style=text-decoration:none><sup><b>a</b></sup></a><br>
+-135<a href=#key style=text-decoration:none><sup><b>a b</b></sup></a></td>
+ <td align=center>2.1<br>
+0.8<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>128</td>
+ <td align=center>0.33<br>
+0.125<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>115<br>
+132</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>85<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>96</td>
+ <td align=center>20</td>
+ <td align=center>81<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>5</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 11/03/21</span><br>
+WJ HF-1000<br>
+2nd Sample</p></td>
+ <td align=center>-129<br>
+-136<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>0.19<br>
+0.055<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>127</td>
+ <td align=center>0.52<br>
+0.25<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>135<br>
+142</td>
+ <td align=center>5<br>
+10</td>
+ <td align=center>D Wideband</td>
+ <td align=center>80</td>
+ <td align=center>94</td>
+ <td align=center>20</td>
+ <td align=center>81<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Atlas<br>
+350-XL</td>
+ <td align=center>-131</td>
+ <td align=center>1.0</td>
+ <td align=center>11</td>
+ <td align=center>117</td>
+ <td align=center>0.2</td>
+ <td align=center>125</td>
+ <td align=center>4</td>
+ <td align=center>C Band Pass</td>
+ <td align=center>95</td>
+ <td align=center>81</td>
+ <td align=center>20</td>
+ <td align=center>81</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+TS-830/YK88</td>
+ <td align=center>-129</td>
+ <td align=center>1.5</td>
+ <td align=center>3</td>
+ <td align=center>122</td>
+ <td align=center>0.1</td>
+ <td align=center>114</td>
+ <td align=center>2</td>
+ <td align=center>C Preselector</td>
+ <td align=center>85<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>84</td>
+ <td align=center>20</td>
+ <td align=center>81</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style2>Added
+4/23/07</span><br>
+Ten-Tec<br>
+Omni VII</td>
+ <td align=center>-130<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>0.8<br>
+0.2<sup>b</sup></td>
+ <td align=center>3</td>
+ <td align=center>130</td>
+ <td align=center>0.45<br>
+0.17<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>124</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>100<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>92</td>
+ <td align=center>20</td>
+ <td align=center>80</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+10/3/04</i></b></font><br>
+Icom<br>
+IC-7800</td>
+ <td align=center>-126<br>
+-136<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-139<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>4.5<br>
+1.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.6<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>&gt;135</td>
+ <td align=center>0.60<br>
+0.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.10<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>130</td>
+ <td align=center>10</td>
+ <td align=center>A Trk Presel</td>
+ <td align=center>100<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>102</td>
+ <td align=center>20</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+10/3/04</i></b></font><br>
+Elecraft K2<br>
+s/n:3170</td>
+ <td align=center>-129<br>
+-136<a href=#key style=text-decoration:none><sup><b>g</b></sup></a></td>
+ <td align=center>10<br>
+1.7<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>15</td>
+ <td align=center>123<br>
+134<a href=#key style=text-decoration:none><sup><b>h</b></sup></a></td>
+ <td align=center>0.35<br>
+0.20</td>
+ <td align=center>123</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>98</td>
+ <td align=center>20</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added 2/27/04</i></b></font><br>
+Ten-Tec<br>
+Omni VI+</td>
+ <td align=center>-135</td>
+ <td align=center>0.7</td>
+ <td align=center>3</td>
+ <td align=center>145</td>
+ <td align=center>0.2</td>
+ <td align=center>137</td>
+ <td align=center>20</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>80</td>
+ <td align=center>97</td>
+ <td align=center>20</td>
+ <td align=center>80</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center>Yaesu<br>
+901-DM</td>
+ <td align=center>-135</td>
+ <td align=center>1.6</td>
+ <td align=center>3</td>
+ <td align=center>124</td>
+ <td align=center>0.15</td>
+ <td align=center>109</td>
+ <td align=center>2</td>
+ <td align=center>C Preselector</td>
+ <td align=center>85</td>
+ <td align=center>87</td>
+ <td align=center>20</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>3</td>
+ </tr>
+<tr>
+ <td align=center><span class=style1>Added
+10/18/20</span><br>
+Lab599 <br>
+TX-500</td>
+ <td align=center>-122<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>16<br>
+1.8<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>112</td>
+ <td align=center>2.0<br>
+0.25<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>135<br>
+134</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B 0.5 Octave </td>
+ <td align=center>100</td>
+ <td align=center>79</td>
+ <td align=center>20</td>
+ <td align=center>79</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+8/10/12</span><br>
+Yaesu<br>
+FT-950</td>
+ <td align=center>-120<br>
+-132<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-138<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>4.5<br>
+1.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.5<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>125</td>
+ <td align=center>1.1<br>
+0.31<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.15<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>125</td>
+ <td align=center>10</td>
+ <td align=center>B</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>105</td>
+ <td align=center>20</td>
+ <td align=center>79<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Collins<br>
+R-390A</td>
+ <td align=center>-137</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp; </td>
+ <td align=center>130</td>
+ <td align=center>0.2</td>
+ <td align=center>130</td>
+ <td align=center>2</td>
+ <td align=center>A+ Trk Presel</td>
+ <td align=center>85</td>
+ <td align=center>81</td>
+ <td align=center>20</td>
+ <td align=center>79</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Ten-Tec Corsair</td>
+ <td align=center>-131<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.1</td>
+ <td align=center>14</td>
+ <td align=center>130</td>
+ <td align=center>0.2</td>
+ <td align=center>132</td>
+ <td align=center>5</td>
+ <td align=center>C Band Pass</td>
+ <td align=center>90</td>
+ <td align=center>93</td>
+ <td align=center>20</td>
+ <td align=center>79</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 12/13/2012</span><br>
+Icom<br>
+IC-7700</p>
+ </td>
+ <td align=center valign=top>-127<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-143<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center valign=top>6.5<br>
+1.6<br>
+0.8</td>
+ <td align=center valign=top>3</td>
+ <td align=center valign=top>140</td>
+ <td align=center valign=top>0.69<br>
+0.15<br>
+0.10</td>
+ <td align=center valign=top>129</td>
+ <td align=center valign=top>10</td>
+ <td align=center valign=top>A Trk Presel</td>
+ <td align=center valign=top>90</td>
+ <td align=center valign=top>105</td>
+ <td align=center valign=top>20</td>
+ <td align=center valign=top>78<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center valign=top>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+9/3/09</span><br>
+Icom<br>
+IC-7600</td>
+ <td align=center>-130<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>5.3<br>
+2.35<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+1.13<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>126</td>
+ <td align=center>0.43<br>
+0.16<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.11<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>121</td>
+ <td align=center>10</td>
+ <td align=center>B</td>
+ <td align=center>78<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>100</td>
+ <td align=center>20</td>
+ <td align=center>78<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+8/25/11</span><br>
+Icom<br>
+IC-7410</td>
+ <td align=center>-135<br>
+-142<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-144<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>2.9<br>
+1.35<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.5<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>135</td>
+ <td align=center>0.3<br>
+0.12<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.1<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>121</td>
+ <td align=center>10</td>
+ <td align=center>B</td>
+ <td align=center>75<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>102</td>
+ <td align=center>20</td>
+ <td align=center>78<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+IC-720A</td>
+ <td align=center>-137</td>
+ <td align=center>1.6</td>
+ <td align=center>3</td>
+ <td align=center>138</td>
+ <td align=center>0.15</td>
+ <td align=center>117</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>80</td>
+ <td align=center>93</td>
+ <td align=center>50</td>
+ <td align=center>78</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+TS-820S</td>
+ <td align=center>-137</td>
+ <td align=center>0.4</td>
+ <td align=center>3</td>
+ <td align=center>115</td>
+ <td align=center>0.2</td>
+ <td align=center>125</td>
+ <td align=center>10</td>
+ <td align=center>C Preselector</td>
+ <td align=center>80</td>
+ <td align=center>79</td>
+ <td align=center>20</td>
+ <td align=center>78</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Updated
+4/17/06</i></b></font><br>
+Kenwood TS-850<br>
+Inrad-400s</td>
+ <td align=center valign=top>-128<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center valign=top>2.2<br>
+0.5<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center valign=top>3</td>
+ <td align=center valign=top>128</td>
+ <td align=center valign=top>0.45<br>
+0.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center valign=top>&nbsp;</td>
+ <td align=center valign=top>&nbsp;</td>
+ <td align=center valign=top>&nbsp;</td>
+ <td align=center valign=top>&nbsp;</td>
+ <td align=center valign=top>90</td>
+ <td align=center valign=top>20</td>
+ <td align=center valign=top>77</td>
+ <td align=center valign=top>2</td>
+ </tr>
+ <tr>
+ <td align=center>JRC<br>
+NRD-515</td>
+ <td align=center>-138</td>
+ <td align=center>3.5</td>
+ <td align=center>4</td>
+ <td align=center>103</td>
+ <td align=center>0.1</td>
+ <td align=center>118</td>
+ <td align=center>10</td>
+ <td align=center>C 0.8 Octave</td>
+ <td align=center>80</td>
+ <td align=center>95</td>
+ <td align=center>20</td>
+ <td align=center>77<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 12/30/10</span><br>
+Kenwood<br>
+Up-conversion<br>
+TS-590S on 17 meters</p>
+ </td>
+ <td align=center>-132<br>
+-139<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>1.4<br>
+0.42<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>133<a href=#key style=text-decoration:none><sup><b>s</b></sup></a></td>
+ <td align=center>0.28<br>
+0.13<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>N.A.</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>N.A.<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>102</td>
+ <td align=center>20</td>
+ <td align=center>76<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Ten-Tec Omni V</td>
+ <td align=center>-134</td>
+ <td align=center>1.2</td>
+ <td align=center>6</td>
+ <td align=center>135</td>
+ <td align=center>0.18</td>
+ <td align=center>134</td>
+ <td align=center>10</td>
+ <td align=center>C Band Pass</td>
+ <td align=center>100</td>
+ <td align=center>89</td>
+ <td align=center>20</td>
+ <td align=center>76</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Atlas<br>
+210/215X</td>
+ <td align=center>-120<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp;</td>
+ <td align=center>123</td>
+ <td align=center>0.5</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp;</td>
+ <td align=center>C Band Pass</td>
+ <td align=center>95</td>
+ <td align=center>76</td>
+ <td align=center>20</td>
+ <td align=center>76</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 05/15/21</span><br>
+Xiegu<br>
+G90</p>
+ </td>
+ <td align=center>-120<br>
+-136<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.1<br>
+0.27<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>116</td>
+ <td align=center>1.9<br>
+1.0<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>113<br>
+134</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>N/A</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>78</td>
+ <td align=center>20</td>
+ <td align=center>76<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Corrected 4/7/06</i></b></font><br>
+Icom<br>
+756 Pro III</td>
+ <td align=center valign=top>-132<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-142<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center valign=top>2.3<br>
+0.7<br>
+0.3</td>
+ <td align=center valign=top>3</td>
+ <td align=center valign=top>142</td>
+ <td align=center valign=top>0.35<br>
+0.14<br>
+0.11</td>
+ <td align=center valign=top>126</td>
+ <td align=center valign=top>10</td>
+ <td align=center valign=top>B 0.5 Octave</td>
+ <td align=center valign=top>80</td>
+ <td align=center valign=top>99</td>
+ <td align=center valign=top>20</td>
+ <td align=center valign=top>75</td>
+ <td align=center valign=top>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+4/7/06</i></b></font><br>
+Icom<br>
+756 Pro II</td>
+ <td align=center valign=top>-133<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center valign=top>2.1<br>
+0.65<br>
+0.26</td>
+ <td align=center valign=top>3</td>
+ <td align=center valign=top>138</td>
+ <td align=center valign=top>0.32<br>
+0.15<br>
+0.11</td>
+ <td align=center valign=top>124</td>
+ <td align=center valign=top>10</td>
+ <td align=center valign=top>B 0.5 Octave</td>
+ <td align=center valign=top>80</td>
+ <td align=center valign=top>98</td>
+ <td align=center valign=top>20</td>
+ <td align=center valign=top>75</td>
+ <td align=center valign=top>2</td>
+ </tr>
+ <tr>
+ <td align=center>Drake<br>
+R-7</td>
+ <td align=center>-135<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>1.0<br>
+0.4<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>145</td>
+ <td align=center>0.28<br>
+0.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>114</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>85</td>
+ <td align=center>97</td>
+ <td align=center>100</td>
+ <td align=center>75</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Drake<br>
+TR-7</td>
+ <td align=center>-134</td>
+ <td align=center>1.3</td>
+ <td align=center>3</td>
+ <td align=center>146</td>
+ <td align=center>0.5</td>
+ <td align=center>116</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90</td>
+ <td align=center>99</td>
+ <td align=center>100</td>
+ <td align=center>75</td>
+ <td align=center>2</td>
+ </tr>
+<tr>
+ <td align=center><font color=#008080><b><i>Added
+11/03/21</i></b></font><br>
+ Drake 2B</td>
+ <td align=center>-136</td>
+ <td align=center>8</td>
+ <td align=center>6</td>
+ <td align=center>130</td>
+ <td align=center>0.34</td>
+ <td align=center>111</td>
+ <td align=center>10</td>
+ <td align=center>B Preselector</td>
+ <td align=center>90</td>
+ <td align=center>91</td>
+ <td align=center>20</td>
+ <td align=center>75</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Heath<br>
+SB-104</td>
+ <td align=center>-123</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp; </td>
+ <td align=center>92</td>
+ <td align=center>0.5</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp; </td>
+ <td align=center>C Band Pass</td>
+ <td align=center>75</td>
+ <td align=center>79</td>
+ <td align=center>20</td>
+ <td align=center>75</td>
+ <td align=center>4</td>
+ </tr>
+ <tr>
+ <td align=center>WJ<br>
+HF-1000</td>
+ <td align=center>-129<br>
+-136<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>0.11</td>
+ <td align=center>3</td>
+ <td align=center>123</td>
+ <td align=center>0.23<br>
+0.13<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>115</td>
+ <td align=center>10</td>
+ <td align=center>D Wideband</td>
+ <td align=center>80</td>
+ <td align=center>99</td>
+ <td align=center>20</td>
+ <td align=center>75</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+4/7/06</i></b></font><br>
+Icom<br>
+706MkIIG</td>
+ <td align=center valign=top>-135<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+ </td>
+ <td align=center valign=top>1.9<br>
+0.6<br>
+ </td>
+ <td align=center valign=top>3<br>
+ </td>
+ <td align=center valign=top>126</td>
+ <td align=center valign=top>0.23<br>
+0.12<br>
+ </td>
+ <td align=center valign=top>127</td>
+ <td align=center valign=top>10</td>
+ <td align=center valign=top>C Octave</td>
+ <td align=center valign=top>80</td>
+ <td align=center valign=top>87</td>
+ <td align=center valign=top>20</td>
+ <td align=center valign=top>74</td>
+ <td align=center valign=top>2</td>
+ </tr>
+ <tr>
+ <td align=center>Ten-Tec<br>
+Omni-B</td>
+ <td align=center>-136</td>
+ <td align=center>0.2</td>
+ <td align=center>25</td>
+ <td align=center>129</td>
+ <td align=center>0.15</td>
+ <td align=center>130</td>
+ <td align=center>10</td>
+ <td align=center>C Preselector</td>
+ <td align=center>80</td>
+ <td align=center>87</td>
+ <td align=center>20</td>
+ <td align=center>74</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+IC-730</td>
+ <td align=center>-140</td>
+ <td align=center>1.5</td>
+ <td align=center>3</td>
+ <td align=center>135</td>
+ <td align=center>0.1</td>
+ <td align=center>118</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>80</td>
+ <td align=center>92</td>
+ <td align=center>50</td>
+ <td align=center>74</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+R-820S</td>
+ <td align=center>-125</td>
+ <td align=center>4.0</td>
+ <td align=center>3</td>
+ <td align=center>125</td>
+ <td align=center>0.35</td>
+ <td align=center>123</td>
+ <td align=center>10</td>
+ <td align=center>C Preselector</td>
+ <td align=center>75</td>
+ <td align=center>74</td>
+ <td align=center>20</td>
+ <td align=center>74</td>
+ <td align=center>4</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+04/11/19</span><br>
+Icom <br>
+IC-9700</td>
+ <td align=center>-131<br>
+-145<a href=#key style=text-decoration:none><sup><b>2</b></sup></a></td>
+ <td align=center>0.7<br>
+0.18<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>111</td>
+ <td align=center>0.35<br>
+0.082<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>130<br>
+138</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center> B Bandpass </td>
+ <td align=center>100</td>
+ <td align=center>74</td>
+ <td align=center>20</td>
+ <td align=center>74</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center>Collins<br>
+75-S3B</td>
+ <td align=center>-146</td>
+ <td align=center>1.1</td>
+ <td align=center>15</td>
+ <td align=center>122</td>
+ <td align=center>0.1</td>
+ <td align=center>120</td>
+ <td align=center>4</td>
+ <td align=center>B+ Preselector</td>
+ <td align=center>85</td>
+ <td align=center>88</td>
+ <td align=center>20</td>
+ <td align=center>74</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+IC-781 </td>
+ <td align=center>-127<br>
+-138<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.0<br>
+0.5<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>&nbsp;</td>
+ <td align=center>0.5<br>
+0.18<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>129</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>94</td>
+ <td align=center>20</td>
+ <td align=center>73</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Updated
+4/18/06</i></b></font><br>
+Stock 781</td>
+ <td align=center>-128<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.4<br>
+0.7<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>131</td>
+ <td align=center>0.5<br>
+0.22<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>&nbsp;</td>
+ <td align=center>&nbsp;</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90</td>
+ <td align=center>98</td>
+ <td align=center>20</td>
+ <td align=center>78</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Updated
+4/18/06</i></b></font><br>
+781 with Pin Diodes</td>
+ <td align=center>-126<br>
+-134<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3.6<br>
+1.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>134</td>
+ <td align=center>0.54<br>
+0.21<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>&nbsp;</td>
+ <td align=center>&nbsp;</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90</td>
+ <td align=center>98</td>
+ <td align=center>20</td>
+ <td align=center>72</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+TS-930S</td>
+ <td align=center>-135</td>
+ <td align=center>2.0</td>
+ <td align=center>3</td>
+ <td align=center>143</td>
+ <td align=center>0.15</td>
+ <td align=center>115</td>
+ <td align=center>10</td>
+ <td align=center>B- 0.5 Octave</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>86</td>
+ <td align=center>20</td>
+ <td align=center>73</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+IC-701</td>
+ <td align=center>-129</td>
+ <td align=center>5.5</td>
+ <td align=center>6</td>
+ <td align=center>130</td>
+ <td align=center>0.3</td>
+ <td align=center>125</td>
+ <td align=center>10</td>
+ <td align=center>C Band Pass</td>
+ <td align=center>75</td>
+ <td align=center>81</td>
+ <td align=center>50</td>
+ <td align=center>73</td>
+ <td align=center>4</td>
+ </tr>
+ <tr>
+ <td align=center>Collins<br>
+75S-3C</td>
+ <td align=center>-141</td>
+ <td align=center>1.3</td>
+ <td align=center>12</td>
+ <td align=center>121</td>
+ <td align=center>0.14</td>
+ <td align=center>120</td>
+ <td align=center>4</td>
+ <td align=center>B+ Preselector</td>
+ <td align=center>95</td>
+ <td align=center>85<a href=#key style=text-decoration:none><sup><b>d</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>72</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood TS-480HX<br>
+Without CW Xtal Filter </td>
+ <td align=center>-135<br>
+-143<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3.0<br>
+0.6<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>142</td>
+ <td align=center>0.28<br>
+0.11<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>121</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>99</td>
+ <td align=center>20</td>
+ <td align=center>72</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>JRC<br>
+NRD-525</td>
+ <td align=center>-132<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.9</td>
+ <td align=center>3</td>
+ <td align=center>123</td>
+ <td align=center>0.2</td>
+ <td align=center>120</td>
+ <td align=center>10</td>
+ <td align=center>B Trk Presel</td>
+ <td align=center>65</td>
+ <td align=center>95</td>
+ <td align=center>50</td>
+ <td align=center>72</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 08/05/15</span><br>
+Yaesu<br>
+FT-991</p>
+ </td>
+ <td align=center>-123<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-143<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>5<br>
+1.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.33<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>133</td>
+ <td align=center>0.70<br>
+0.17<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.08<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>120<br>
+137</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Bandpass</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>96</td>
+ <td align=center>20</td>
+ <td align=center>72</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Updated
+4/13/09</i></b></font><br>
+Yaesu FT-1000<br>
+MP MKV Field<br>
+ <font size=-1>Inrad roofing filter mod</font></td>
+ <td align=center>-133<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3.0<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>135</td>
+ <td align=center>0.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>128</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>89</td>
+ <td align=center>20</td>
+ <td align=center>71<a href=#key style=text-decoration:none><sup><b>k</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added 10/3/04</i></b></font><br>
+Icom<br>
+756 Pro<br>
+ </td>
+ <td align=center>-127<br>
+-136<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-139<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3.5<br>
+1.0<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.5<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>132</td>
+ <td align=center>0.55<br>
+0.21<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.14<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>127</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90</td>
+ <td align=center>86</td>
+ <td align=center>20</td>
+ <td align=center>71</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Drake<br>
+R-8</td>
+ <td align=center>-128<br>
+-131<a href=#key style=text-decoration:none><sup><b>a</b></sup><sup><b>b</b></sup></a></td>
+ <td align=center>0.6<br>
+0.3</td>
+ <td align=center>3</td>
+ <td align=center>130</td>
+ <td align=center>0.25<br>
+0.18<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>115</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>75<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>90<br>
+85<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>71</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+IC-R72</td>
+ <td align=center>-127<br>
+-135<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>3.1<br>
+1.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>129</td>
+ <td align=center>0.28<br>
+0.11<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>122</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>75</td>
+ <td align=center>87<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>71</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+R-9000</td>
+ <td align=center>-131<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.8</td>
+ <td align=center>3</td>
+ <td align=center>129</td>
+ <td align=center>0.15</td>
+ <td align=center>128</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90</td>
+ <td align=center>93</td>
+ <td align=center>20</td>
+ <td align=center>71</td>
+ <td align=center>5</td>
+ </tr>
+<tr>
+ <td align=center>
+ <p><span class=style1>Added 04/25/16</span><br>
+Icom <br>
+IC-9100</p></td>
+ <td align=center>-133<br>
+-141<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-141<a href=#key style=text-decoration:none><sup><b>2</b></sup></a></td>
+ <td align=center>2.4<br>
+1.0<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.39<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>N.A.</td>
+ <td align=center>0.36<br>
+0.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.130<a href=#key style=text-decoration:none><sup><b>2</b></sup></a></td>
+ <td align=center>119<br>
+136</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>N.A.</td>
+ <td align=center>101<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>20</td>
+ <td align=center>71<a href=#key style=text-decoration:none><sup><b>f</b></sup></a><br>
+60<a href=#key style=text-decoration:none><sup><b>70</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added 2/27/04</i></b></font><br>
+Elecraft K2<br>
+s/n: 1140</td>
+ <td align=center>-135</td>
+ <td align=center>2.6</td>
+ <td align=center>15</td>
+ <td align=center>118</td>
+ <td align=center>0.22</td>
+ <td align=center>123</td>
+ <td align=center>10</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>95</td>
+ <td align=center>20</td>
+ <td align=center>70</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added 01/06/21</i></b></font><br>
+Elad DUO<br>
+s/n: 5F0007</td>
+ <td align=center>-132</td>
+ <td align=center>3.3</td>
+ <td align=center>3</td>
+ <td align=center>124</td>
+ <td align=center>0.33</td>
+ <td align=center>133</td>
+ <td align=center>10</td>
+ <td align=center>D LPF</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>70</td>
+ <td align=center>20</td>
+ <td align=center>70</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>JRC<br>
+NRD-535</td>
+ <td align=center>-135<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.9</td>
+ <td align=center>3</td>
+ <td align=center>114</td>
+ <td align=center>0.1</td>
+ <td align=center>117</td>
+ <td align=center>10</td>
+ <td align=center>B Trk Presel</td>
+ <td align=center>70</td>
+ <td align=center>92</td>
+ <td align=center>50</td>
+ <td align=center>70</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+TS-830S</td>
+ <td align=center>-136<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.9</td>
+ <td align=center>3</td>
+ <td align=center>122</td>
+ <td align=center>0.1</td>
+ <td align=center>113</td>
+ <td align=center>2</td>
+ <td align=center>C Preselector</td>
+ <td align=center>80</td>
+ <td align=center>84</td>
+ <td align=center>20</td>
+ <td align=center>70</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+IC-761</td>
+ <td align=center>-131<br>
+-139<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.0<br>
+0.7<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>145</td>
+ <td align=center>0.4<br>
+0.17<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>129</td>
+ <td align=center>10</td>
+ <td align=center>B- 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>87</td>
+ <td align=center>20</td>
+ <td align=center>70</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>
+ <p><span class=style1>Added 7/8/15</span><br>
+Yaesu<br>
+FTdx-1200</p>
+ </td>
+ <td align=center valign=top>-122<br>
+-134<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-140<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center valign=top>5.5<br>
+1.4<br>
+0.4</td>
+ <td align=center valign=top>3</td>
+ <td align=center valign=top>137</td>
+ <td align=center valign=top>1.0<br>
+0.26<br>
+0.14</td>
+ <td align=center valign=top>123</td>
+ <td align=center valign=top>10</td>
+ <td align=center valign=top>B 0.5 Octave</td>
+ <td align=center valign=top>83</td>
+ <td align=center valign=top>102<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center valign=top>20</td>
+ <td align=center valign=top>70<a href=#key style=text-decoration:none><sup><b>z</b></sup></a></td>
+ <td align=center valign=top>2</td>
+ </tr>
+ <tr><td align=center>
+ <p><span class=style1>Added 07/26/17</span><br>
+Yaesu<br>
+FT-891</p></td>
+ <td align=center>-129<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-138<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>6.1<br>
+1.55<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>N.A.</td>
+ <td align=center>0.44<br>
+0.11<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.15<a href=#key style=text-decoration:none><sup><b>6</b></sup></a></td>
+ <td align=center>116<br>
+N.A.</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>92</td>
+ <td align=center>20</td>
+ <td align=center>70<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+08/05/15</span><br>
+Kenwood <br>
+TS-570S</td>
+ <td align=center>-131<br>
+-139<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>1.6<br>
+0.43<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>143</td>
+ <td align=center>0.40<br>
+0.16<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>118<br>
+137</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center> B Bandpass </td>
+ <td align=center>75</td>
+ <td align=center>99</td>
+ <td align=center>20</td>
+ <td align=center>69<a href=#key style=text-decoration:none><sup><b>f</b></sup></a><br>
+ </td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+4/16/06</i></b></font><br>
+Kenwood<br>
+TS-870S</td>
+ <td align=center>-127<br>
+-137<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>1.9<br>
+0.44<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>137</td>
+ <td align=center>0.5</td>
+ <td align=center>121</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>95</td>
+ <td align=center>20</td>
+ <td align=center>69</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+10/3/04</i></b></font><br>
+Yaesu FT-1000<br>
+MP MKV Field</td>
+ <td align=center>-133<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3.0<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>135</td>
+ <td align=center>0.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>128</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>88</td>
+ <td align=center>20</td>
+ <td align=center>69</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+10/3/04</i></b></font><br>
+Yaesu<br>
+FT-1000 D</td>
+ <td align=center>-128<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>6.0<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>&gt;131</td>
+ <td align=center>0.3<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center>121</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>90</td>
+ <td align=center>20</td>
+ <td align=center>69</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Lowe<br>
+HF-150</td>
+ <td align=center>-126<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.7</td>
+ <td align=center>3</td>
+ <td align=center>126</td>
+ <td align=center>0.3</td>
+ <td align=center>113</td>
+ <td align=center>10</td>
+ <td align=center>F No Bandpass</td>
+ <td align=center>75</td>
+ <td align=center>84</td>
+ <td align=center>20</td>
+ <td align=center>69</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+TS-430S</td>
+ <td align=center>-136<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.6</td>
+ <td align=center>3</td>
+ <td align=center>134</td>
+ <td align=center>0.1</td>
+ <td align=center>102</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>70</td>
+ <td align=center>78</td>
+ <td align=center>20</td>
+ <td align=center>69</td>
+ <td align=center>5</td>
+ </tr>
+<tr>
+ <td align=center><font color=#008080><b><i>Updated
+01/30/2023</i></b></font><br>
+Expert<br>
+SunSDR2 DX</td>
+ <td align=center>-124<br>
+-132<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.0<br>
+1.8<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>128</td>
+ <td align=center>0.9<br>
+0.4<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>150</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>100</td>
+ <td align=center>68<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br></td>
+ <td align=center>20</td>
+ <td align=center>68<a href=#key style=text-decoration:none><sup><b>ad</b></sup></a><br></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+10/3/04</i></b></font><br>
+Yaesu<br>
+FT-1000 MP</td>
+ <td align=center>-125<br>
+-134<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3.8<br>
+1.1<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>&gt;135</td>
+ <td align=center>0.48<br>
+0.18<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>128</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>97</td>
+ <td align=center>20</td>
+ <td align=center>68</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>JRC<br>
+NRD-545</td>
+ <td align=center>-130<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>2.0</td>
+ <td align=center>6</td>
+ <td align=center>127</td>
+ <td align=center>0.2</td>
+ <td align=center>118</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>65</td>
+ <td align=center>96</td>
+ <td align=center>100</td>
+ <td align=center>68</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Signal/One<br>
+CX-11A</td>
+ <td align=center>-122<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.6</td>
+ <td align=center>17</td>
+ <td align=center>109</td>
+ <td align=center>0.6</td>
+ <td align=center>119</td>
+ <td align=center>50</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>105</td>
+ <td align=center>90</td>
+ <td align=center>50</td>
+ <td align=center>68</td>
+ <td align=center>5<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+TS-180S</td>
+ <td align=center>-139</td>
+ <td align=center>0.9</td>
+ <td align=center>3</td>
+ <td align=center>115</td>
+ <td align=center>0.15</td>
+ <td align=center>120</td>
+ <td align=center>10</td>
+ <td align=center>C Preselector</td>
+ <td align=center>80</td>
+ <td align=center>70</td>
+ <td align=center>20</td>
+ <td align=center>68</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Drake<br>
+TR-4C</td>
+ <td align=center>-124<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>1.2</td>
+ <td align=center>3</td>
+ <td align=center>105</td>
+ <td align=center>0.4</td>
+ <td align=center>130</td>
+ <td align=center>10</td>
+ <td align=center>C Preselector</td>
+ <td align=center>80</td>
+ <td align=center>74</td>
+ <td align=center>20</td>
+ <td align=center>68</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+IC-735</td>
+ <td align=center>-126<br>
+-133<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>1.5</td>
+ <td align=center>12</td>
+ <td align=center>135</td>
+ <td align=center>0.35<br>
+0.18<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>123</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>83</td>
+ <td align=center>20</td>
+ <td align=center>68</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+1/21/04</i></b></font><br>
+Icom<br>
+IC-R75</td>
+ <td align=center>-123<a href=#key style=text-decoration:none><sup><b>a</b></sup></a><br>
+-130<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3.5<br>
+1.3<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>119</td>
+ <td align=center>0.5<br>
+0.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>109</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>80</td>
+ <td align=center>95</td>
+ <td align=center>50</td>
+ <td align=center>67</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Drake SW8</td>
+ <td align=center>-127<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.9</td>
+ <td align=center>3</td>
+ <td align=center>125</td>
+ <td align=center>0.32</td>
+ <td align=center>113</td>
+ <td align=center>10</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>70</td>
+ <td align=center>92</td>
+ <td align=center>20</td>
+ <td align=center>67</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Racal<br>
+6790 GM</td>
+ <td align=center>-128</td>
+ <td align=center>0.3</td>
+ <td align=center>1</td>
+ <td align=center>145</td>
+ <td align=center>0.7</td>
+ <td align=center>130</td>
+ <td align=center>10</td>
+ <td align=center>D Broadband</td>
+ <td align=center>85</td>
+ <td align=center>95</td>
+ <td align=center>20</td>
+ <td align=center>66</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ <tr>
+ <td align=center>Yaesu<br>
+FT-736R<br>
+2 meters</td>
+ <td align=center>-141</td>
+ <td align=center>1.3</td>
+ <td align=center>3</td>
+ <td align=center>125</td>
+ <td align=center>0.11</td>
+<td align=center>128<br>
+143</td>
+<td align=center>10<br>
+50</td>
+ <td align=center>C Bandpass</td>
+ <td align=center>80</td>
+ <td align=center>88</td>
+ <td align=center>20</td>
+ <td align=center>66</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Lowe<br>
+HF-235</td>
+ <td align=center>-126<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.8</td>
+ <td align=center>3</td>
+ <td align=center>129</td>
+ <td align=center>0.35</td>
+ <td align=center>117</td>
+ <td align=center>10</td>
+ <td align=center>D Octave</td>
+ <td align=center>80</td>
+ <td align=center>71</td>
+ <td align=center>20</td>
+ <td align=center>66</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>AOR<br>
+AR3030</td>
+ <td align=center>-131<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>2.0</td>
+ <td align=center>10</td>
+ <td align=center>130</td>
+ <td align=center>0.16</td>
+ <td align=center>117</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>85</td>
+ <td align=center>90</td>
+ <td align=center>20</td>
+ <td align=center>66</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+11/01/19</i></b></font><br>
+Kenwood TS-2000X<br>
+2 meter data</td>
+ <td align=center>-123<br>
+-140<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>2.8<br>
+0.45<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>124</td>
+ <td align=center>1.0<br>
+0.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>113<br>
+131</td>
+ <td align=center>10<br>
+50</td>
+ <td align=center>B Band Pass</td>
+ <td align=center>75<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>87</td>
+ <td align=center>20</td>
+ <td align=center>65<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ 
+ <tr>
+ <td align=center>Yaesu<br>
+FRG-100</td>
+ <td align=center>-133<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.9</td>
+ <td align=center>3</td>
+ <td align=center>127</td>
+ <td align=center>0.13</td>
+ <td align=center>112</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>70</td>
+ <td align=center>99</td>
+ <td align=center>50</td>
+ <td align=center>65</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+R-5000</td>
+ <td align=center>-131<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.4</td>
+ <td align=center>3</td>
+ <td align=center>134</td>
+ <td align=center>0.2</td>
+ <td align=center>120</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>86</td>
+ <td align=center>20</td>
+ <td align=center>65</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added 2/27/04</i></b></font><br>
+Palstar<br>
+R-30</td>
+ <td align=center>-123</td>
+ <td align=center>2.6</td>
+ <td align=center>3</td>
+ <td align=center>130</td>
+ <td align=center>0.35</td>
+ <td align=center>116</td>
+ <td align=center>10</td>
+ <td align=center>C Octave</td>
+ <td align=center>90</td>
+ <td align=center>88</td>
+ <td align=center>20</td>
+ <td align=center>64</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Yaesu<br>
+FRG-7700</td>
+ <td align=center>-130<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>1.3</td>
+ <td align=center>3</td>
+ <td align=center>123</td>
+ <td align=center>0.2</td>
+ <td align=center>100</td>
+ <td align=center>10</td>
+ <td align=center>D Octave</td>
+ <td align=center>65</td>
+ <td align=center>83</td>
+ <td align=center>50</td>
+ <td align=center>64<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>5<a href=#key style=text-decoration:none><sup><b>c</b></sup></a></td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+R-1000</td>
+ <td align=center>-130<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.9</td>
+ <td align=center>3</td>
+ <td align=center>119</td>
+ <td align=center>0.2</td>
+ <td align=center>107</td>
+ <td align=center>10</td>
+ <td align=center>D Octave</td>
+ <td align=center>70</td>
+ <td align=center>76</td>
+ <td align=center>20</td>
+ <td align=center>64<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>3<a href=#key style=text-decoration:none><sup><b>c</b></sup></a></td>
+ </tr>
+ <tr>
+ <td align=center>Heath<br>
+SB-303</td>
+ <td align=center>-134</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp; </td>
+ <td align=center>104</td>
+ <td align=center>0.5</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp; </td>
+ <td align=center>C Preselector</td>
+ <td align=center>70</td>
+ <td align=center>66</td>
+ <td align=center>20</td>
+ <td align=center>64</td>
+ <td align=center>4</td>
+ </tr>
+ <tr>
+ <td align=center>Collins<br>
+KWM-380</td>
+ <td align=center>-127<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>1.1</td>
+ <td align=center>5</td>
+ <td align=center>123</td>
+ <td align=center>0.3</td>
+ <td align=center>99</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>70<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>94</td>
+ <td align=center>50</td>
+ <td align=center>64<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+IC-751</td>
+ <td align=center>-127<br>
+-133<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>6.3</td>
+ <td align=center>3</td>
+ <td align=center>138</td>
+ <td align=center>0.4<br>
+0.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>127</td>
+ <td align=center>10</td>
+ <td align=center>B- 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>84</td>
+ <td align=center>20</td>
+ <td align=center>64</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center><font color=#008080><b><i>Added
+3/27/06</i></b></font><br>
+Icom 7000</td>
+ <td align=center valign=top>-129<br>
+-139<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center valign=top>4.5<br>
+1.0</td>
+ <td align=center valign=top>3</td>
+ <td align=center valign=top>119</td>
+ <td align=center valign=top>0.45<br>
+0.13</td>
+ <td align=center valign=top>122</td>
+ <td align=center valign=top>10</td>
+ <td align=center valign=top>C Octave</td>
+ <td align=center valign=top>65</td>
+ <td align=center valign=top>90</td>
+ <td align=center valign=top>20</td>
+ <td align=center valign=top>63</td>
+ <td align=center valign=top>2</td>
+ </tr>
+ <tr>
+ <td align=center><span class=style1>Added
+9/22/07</span><br>
+Yaesu FT-2000</td>
+ <td align=center valign=top>-122<br>
+-132<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+-140<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center valign=top>5<br>
+1.3<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.5<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center valign=top>3</td>
+ <td align=center valign=top>120</td>
+ <td align=center valign=top>1.0<br>
+0.3<a href=#key style=text-decoration:none><sup><b>b</b></sup></a><br>
+0.14<a href=#key style=text-decoration:none><sup><b>b1</b></sup></a></td>
+ <td align=center valign=top>122</td>
+ <td align=center valign=top>10</td>
+ <td align=center valign=top>B+ Bandpass <br>
++ Trk </td>
+ <td align=center valign=top>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center valign=top>81<a href=#key style=text-decoration:none><sup><b>n</b></sup></a><br>
+90<a href=#key style=text-decoration:none><sup><b>o</b></sup></a></td>
+ <td align=center valign=top>20</td>
+ <td align=center valign=top>63<a href=#key style=text-decoration:none><sup><b>n</b></sup></a> <br>
+61<a href=#key style=text-decoration:none><sup><b>o</b></sup></a></td>
+<td align=center valign=top>2</td>
+ </tr>
+ 
+ <tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+<tr>
+ <td align=center>Icom<br>
+IC-275H<br>
+2 meters</td>
+<td align=center>-136<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.25</td>
+ <td align=center>3</td>
+ <td align=center>122</td>
+ <td align=center>0.11</td>
+<td align=center>124<br>
+141</td>
+<td align=center>10<br>
+50</td>
+ <td align=center>B Bandpass</td>
+ <td align=center>75</td>
+ <td align=center>85</td>
+ <td align=center>20</td>
+ <td align=center>63</td>
+ <td align=center>2</td>
+ </tr>
+ 
+ <tr>
+ <td align=center>Kenwood<br>
+TS-520</td>
+ <td align=center>-139</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp;</td>
+ <td align=center>116</td>
+ <td align=center>0.15</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp;</td>
+ <td align=center>C Preselector</td>
+ <td align=center>70</td>
+ <td align=center>63</td>
+ <td align=center>20</td>
+ <td align=center>63</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Yaesu<br>
+FT-One</td>
+ <td align=center>-135</td>
+ <td align=center>1.0</td>
+ <td align=center>3</td>
+ <td align=center>130</td>
+ <td align=center>0.2</td>
+ <td align=center>99</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>80<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>91</td>
+ <td align=center>50</td>
+ <td align=center>63<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Collins<br>
+75-S3 Wing</td>
+ <td align=center>-145</td>
+ <td align=center>1.0</td>
+ <td align=center>14</td>
+ <td align=center>105</td>
+ <td align=center>0.1</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp;</td>
+ <td align=center>B Preselector</td>
+ <td align=center>75</td>
+ <td align=center>75</td>
+ <td align=center>20</td>
+ <td align=center>63</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>JRC<br>
+NRD-93</td>
+ <td align=center>-141</td>
+ <td align=center>1.6</td>
+ <td align=center>3</td>
+ <td align=center>128</td>
+ <td align=center>0.15</td>
+ <td align=center>133</td>
+ <td align=center>10</td>
+ <td align=center>A+ Trk Presel</td>
+ <td align=center>80</td>
+ <td align=center>94</td>
+ <td align=center>20</td>
+ <td align=center>63</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Yaesu<br>
+FT-980</td>
+ <td align=center>-136</td>
+ <td align=center>1.8</td>
+ <td align=center>3</td>
+ <td align=center>140</td>
+ <td align=center>0.12</td>
+ <td align=center>106</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>62<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>96</td>
+ <td align=center>50</td>
+ <td align=center>63</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+IC-R70/R-71A</td>
+ <td align=center>-129<br>
+-135<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3.1<br>
+1.4<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>3</td>
+ <td align=center>132</td>
+ <td align=center>0.4<br>
+0.2<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>128</td>
+ <td align=center>10</td>
+ <td align=center>B- 0.5 Octave</td>
+ <td align=center>90<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>86</td>
+ <td align=center>20</td>
+ <td align=center>62</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Grundig Satellite 700</td>
+ <td align=center>-127<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>1.6</td>
+ <td align=center>3</td>
+ <td align=center>106</td>
+ <td align=center>0.3</td>
+ <td align=center>118</td>
+ <td align=center>10</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>85</td>
+ <td align=center>76</td>
+ <td align=center>20</td>
+ <td align=center>62</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>KWZ-30</td>
+ <td align=center>-130</td>
+ <td align=center>1.0</td>
+ <td align=center>3</td>
+ <td align=center>120</td>
+ <td align=center>0.8</td>
+ <td align=center>118</td>
+ <td align=center>10</td>
+ <td align=center><a href=#key style=text-decoration:none><sup><b>d</b></sup></a></td>
+ <td align=center>80</td>
+ <td align=center>100</td>
+ <td align=center>20</td>
+ <td align=center>60</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Collins<br>
+51S1</td>
+ <td align=center>-134</td>
+ <td align=center>1.0</td>
+ <td align=center>7</td>
+ <td align=center>117</td>
+ <td align=center>0.13</td>
+ <td align=center>146</td>
+ <td align=center>10</td>
+ <td align=center>A Trk Presel</td>
+ <td align=center>100</td>
+ <td align=center>84<a href=#key style=text-decoration:none><sup><b>e</b></sup></a></td>
+ <td align=center>100</td>
+ <td align=center>60</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Icom<br>
+R-8500</td>
+ <td align=center>-135<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.45</td>
+ <td align=center>3</td>
+ <td align=center>132</td>
+ <td align=center>0.11</td>
+ <td align=center>131</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>75</td>
+ <td align=center>81</td>
+ <td align=center>20</td>
+ <td align=center>59</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Yaesu<br>
+FT-101E</td>
+ <td align=center>-141</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp;</td>
+ <td align=center>102</td>
+ <td align=center>0.15</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp;</td>
+ <td align=center>C Preselector</td>
+ <td align=center>70</td>
+ <td align=center>60</td>
+ <td align=center>20</td>
+ <td align=center>59</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Drake<br>
+R-4C Stock</td>
+ <td align=center>-139</td>
+ <td align=center>0.7</td>
+ <td align=center>3</td>
+ <td align=center>130</td>
+ <td align=center>0.15</td>
+ <td align=center>144</td>
+ <td align=center>5</td>
+ <td align=center>A- Preselector</td>
+ <td align=center>70</td>
+ <td align=center>85</td>
+ <td align=center>20</td>
+ <td align=center>58</td>
+ <td align=center>2</td>
+ </tr>
+ <tr>
+ <td align=center>Yaesu<br>
+FT-757</td>
+ <td align=center>-120<br>
+-134<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>1.6</td>
+ <td align=center>3</td>
+ <td align=center>130</td>
+ <td align=center>0.7<br>
+0.15<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>109</td>
+ <td align=center>10</td>
+ <td align=center>C 0.5 Octave</td>
+ <td align=center>70<a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>86</td>
+ <td align=center>20</td>
+ <td align=center>56</td>
+ <td align=center>3</td>
+ </tr>
+ <tr>
+ <td align=center>Ten-Tec<br>
+340</td>
+ <td align=center>-123<br>
+-133<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>0.5<br>
+0.13</td>
+ <td align=center>3</td>
+ <td align=center>109</td>
+ <td align=center>0.4<br>
+0.14</td>
+ <td align=center>113</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>70</td>
+ <td align=center>93</td>
+ <td align=center>100</td>
+ <td align=center>46</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+R-2000</td>
+ <td align=center>-130<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>1.4</td>
+ <td align=center>3</td>
+ <td align=center>115</td>
+ <td align=center>0.15</td>
+ <td align=center>105</td>
+ <td align=center>10</td>
+ <td align=center>D Octave</td>
+ <td align=center>70</td>
+ <td align=center>71</td>
+ <td align=center>20</td>
+ <td align=center>45</td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Kenwood<br>
+R-600</td>
+ <td align=center>-130<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.8</td>
+ <td align=center>3</td>
+ <td align=center>109</td>
+ <td align=center>0.2</td>
+ <td align=center>99</td>
+ <td align=center>10</td>
+ <td align=center>D Octave</td>
+ <td align=center>65</td>
+ <td align=center>68</td>
+ <td align=center>20</td>
+ <td align=center><font size=-1><b><i><a href=#key style=text-decoration:none>F.L.</a>.</i></b></font></td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>Yaesu<br>
+FRG-8800</td>
+ <td align=center>-132<a href=#key style=text-decoration:none><sup><b>a</b></sup></a></td>
+ <td align=center>0.6</td>
+ <td align=center>3</td>
+ <td align=center>122</td>
+ <td align=center>0.18</td>
+ <td align=center><font size=-1><b><i>N.A.</i></b></font></td>
+ <td align=center>&nbsp; </td>
+ <td align=center>D Octave</td>
+ <td align=center>70</td>
+ <td align=center>87</td>
+ <td align=center>20</td>
+ <td align=center><font size=-1><b><i><a href=#key style=text-decoration:none>F.L.</a></i></b></font></td>
+ <td align=center>5</td>
+ </tr>
+<tr>
+ <td align=center>AOR<br>
+5000</td>
+ <td align=center>-124<br>
+-130<a href=#key style=text-decoration:none><sup><b>a&amp;</b></sup><sup><b>b</b></sup></a></td>
+ <td align=center>1.8<br>
+0.9</td>
+ <td align=center>3</td>
+ <td align=center>118</td>
+ <td align=center>0.2<br>
+0.35</td>
+ <td align=center>103</td>
+ <td align=center>10</td>
+ <td align=center>B 0.5 Octave</td>
+ <td align=center>60</td>
+ <td align=center>58</td>
+ <td align=center>50</td>
+ <td align=center><a href=#key style=text-decoration:none><sup><b>f</b></sup></a></td>
+ <td align=center>5</td>
+ </tr>
+ <tr>
+ <td align=center>CommRadio<br>
+CTX-10</td>
+ <td align=center>-120<br>
+-134<a href=#key style=text-decoration:none><sup><b>b</b></sup></a></td>
+ <td align=center>5.5<br>
+0.7</td>
+ <td align=center>3</td>
+ <td align=center>49</td>
+ <td align=center>5<br>
+1</td>
+ <td align=center>N.A.</td>
+ <td align=center>N.A.</td>
+ <td align=center>C Octave</td>
+ <td align=center>50</td>
+ <td align=center>50</td>
+ <td align=center>20</td>
+ <td align=center>45</td>
+ <td align=center>5</td>
+ </tr>
+ 
+<tr>
+ <th bgcolor=#008080 width=155><font color=#ffffff><b> Device<br>
+Under Test</b></font></th>
+ <th bgcolor=#008080 width=70><font color=#ffffff size=-1><b>Noise<br>
+Floor<br>
+(dBm)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> AGC<br>
+Thrshld<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+dB</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> 100kHz<br>
+Blocking<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+Sensitivity<br>
+(uV)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> LO Noise<br>
+Spacing<br>
+(dBc/Hz)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Front
+End<br>
+Selectivity</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Filter<br>
+Ultimate<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Wide Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> Dynamic
+Range<br>
+Narrow Spaced<br>
+(dB)</b></font></th>
+ <th bgcolor=#008080><font color=#ffffff size=-1><b> <br>
+kHz</b></font></th>
+ </tr>
+ </tbody>
+</table>
+<p align=left>
+<table align=center cellpadding=3 cellspacing=0 width=95%>
+ <tbody>
+ <tr>
+ <td colspan=2 align=center bgcolor=#ffffcc valign=top>
+ <dl>
+ <font color=#008080 face="Arial Black" size=5> <a name=key></a>Receiver Table Legend:</font>
+ </dl>
+ </td>
+ </tr>
+ <tr>
+ <td align=left bgcolor=#ffffcc valign=top width=3%>&nbsp;</td>
+ <td align=left bgcolor=#ffffcc valign=top width=97%>&nbsp;</td>
+ 
+ 
+ </tr>
+ <tr>
+ <td colspan=2 align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>&nbsp; &nbsp; <b>3 dB blocking (gain
+compression) test done at 100 kHz</b> to eliminate phase noise
+interaction<br>
+&nbsp; &nbsp;<font size=-1><b><i>F.L.</i></b></font> = Filter
+limited, no measurement was possible due to signal leakage around filter<br>
+&nbsp; &nbsp;<font size=-1><b><i><font size=-1><b><i>N.A.</i></b></font></i></b></font>
+= Data not available</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top>&nbsp;</td>
+ <td align=left bgcolor=#ffffcc valign=top>&nbsp;</td>
+ 
+ 
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>a</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Measured with SSB filter</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>b0</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>No preamp actuated</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>b</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Built-in Preamp actuated</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>b1</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Built-in Preamp 2 actuated</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>b2</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Built-in Preamp set at 20 dB. Adjustable to 10, 20 or 30 dB</font></td>
+ </tr>
+<tr><td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>b3</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Built-in Preamp set at 16 dB</font></td>
+ </tr>
+<tr><td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>b4</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Built-in Preamp set at 32 dB</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>c</i></b></font> </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Readings would have been lower if 2-kHz spacing had been
+possible</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><span class=style15><font size=3><font size=-1>d</font> </font></span></td>
+ <td align=left bgcolor=#ffffcc valign=top><span class=style16><font size=3>Dynamic Range is 90-dB at 100-kHz
+spacing</font></span></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>e</i></b></font> </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>20-kHz Dynamic Range is 66-dB</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>f</i></b></font> </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3> Measurement was Phase-Noise Limited = ARRL RMDR (Reciprocal
+Mixing Dynamic Range) </font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>g</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Audio DSP Enabled</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>h</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>AGC Off</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>i</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>At 1 kHz dynamic also 95 dB but with 300 Hz roofing filter
+enabled</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>j</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>At 1 kHz, noise limited to 68 dB</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>k</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>At 1 kHz dynamic range was 66 dB</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>l</i></b></font> </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1>(lowercase L)</font> Reserved</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><font size=-1><b><i>m</i></b></font></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Receiver was optimized by Malcom Technical Support for best
+dynamic range</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>n</font></em></strong></font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Measured with 3 kHz roofing filter</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>o</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Measured with 6 kHz roofing filter</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>p</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>with 200 Hz 5-pole filter</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><em><strong><font face=Arial size=-1>q</font></strong></em></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>with 400 Hz 8-pole filter</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>r</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>with 500 Hz 5-pole filter</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>s</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Using ARRL 3-Hz bandwidth blocking method</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>t</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>with optional roofing filter</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>u</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>without optional roofing filter</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>v</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3> At 1 kHz performance is opposite sideband rejection limited </font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>w</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>At 1 kHz dynamic range is 104 dB</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>x</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>"Long Form" report available by e-mail request.<br>
+2-kHz RMDR: 6M=91dB, 10M=92dB, 12&amp;15&amp;20M=87dB, 17M=85dB,
+30M=98dB, 40M=92dB, 80M=94dB &amp; 160M=95dB</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>y</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>DR3=108 dB with 20 dB preamp ON, and 99 dB with preamp OFF. Otherwise
+dynamic range independent of signal spacing.<br>
+NOTE: Tests in 2017 of a second 6700, and by the ARRL of a 6500, no longer measured a dynamic-range increase with the preamp ON. The 108 dB value is no longer valid.
+2 kHz dynamic range is 99 dB, same as 6600M. As with any radio, only use a preamp if it improves copy, and usually only on 15m and up.</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>z</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>The low-side dynamic range was 76 dB, while the high-side
+dynamic range was 70.<br>
+NOTE: This may imply the roofing filter was asymmetrical, and likely a
+sample variation.</font></td>
+ </tr>
+ 
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>aa</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Measured using 1.2 kHz roofing filter.</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>ab</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Measured with IP+ ON.</font></td>
+ </tr>
+ <tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>ac</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Measured with dither and random OFF<br>
+NOTE: Icom calls "dither and random" IP+. Noise floor may be affected by dither and random.</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>ad</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Measured with Dither and Random ON<br>
+NOTE: Dither and Random convert intermodulation products into broadband noise.</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>ae</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>AGC threshold adjustable<br>
+NOTE: AGC threshold should be set about 6 dB above band noise.</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>af</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>Measured with third test tone.<br>
+NOTE: ARRL may test dynamic range (DR3) of direct-sampling radios with a third test tone to approximate a crowded band. The validity of this test method is questionable.</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>ag</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>DR3=96 dB with 20 dB Preamp ON. (99 dB Preamp OFF) Otherwise
+dynamic range independent of signal spacing.<br>
+NOTE: Testing of 2nd sample made on 10 meters while investigating IFSS* curves.
+Similar testing of 2nd sample of K3S, also made on 10 meters. * IFSS = Interference free signal strength.</font></td>
+ </tr>
+<tr> 
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>ah</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>
+NOTE: Testing of 2nd sample made on 10 meters while investigating IFSS* curves.
+Similar testing of 2nd sample of Flex Radio 6700, also made on 10 meters. * IFSS = Interference free signal strength.</font></td>
+ </tr>
+<tr> 
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>ai</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>
+NOTE: Dynamic range testing of a second 6300 sample resulted in a modestly higher dyanmic range measurement.</font></td>
+ </tr>
+<tr> 
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>aj</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>
+NOTE: Test data for 6600M is after May 2018 PEN (Product Enhancement Notice). Due to the insertion loss of 7-pole bandpass filters on the contest bands,
+recommend +16 dB preamp during daytime on 80 -17 meters if in a quiet location. 15 - 6 meters may require +32dB preamp for an adequate noise floor.Tested with Alpha v. 2.2.7 software.</font></td>
+ </tr>
+<tr> 
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>ak</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>
+Some variation in dynamic range was noted after an extended warm-up.</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>6</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>6 meter data, preamp ON</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>10</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>10 meter data, preamp 2 ON</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>2</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>2 meter data, preamp ON</font></td>
+ </tr>
+<tr>
+ <td align=center bgcolor=#ffffcc valign=top><font face=Arial size=3><strong><em><font size=-1>70</font></em></strong>
+ </font></td>
+ <td align=left bgcolor=#ffffcc valign=top><font face=Arial size=3>70cm, preamp ON. RMDR limited</font></td>
+ </tr>
+ </tbody>
+</table>
+</p>
+<hr>
+<p align=center><a href=http://www.sherweng.com/index.html style=text-decoration:none><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="69" height="171"><rect fill-opacity="0"/></svg>' alt="Sherwood Engineering Incorporated" align=left border=0 height=75 style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-2)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></a><a href=http://www.sherweng.com/index.html style=text-decoration:none><img src='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="473" height="37"><rect fill-opacity="0"/></svg>' alt="Sherwood Engineering Incorporated" align=middle border=0 height=25 style="background-blend-mode:normal!important;background-clip:content-box!important;background-position:50% 50%!important;background-color:rgba(0,0,0,0)!important;background-image:var(--sf-img-3)!important;background-size:100% 100%!important;background-origin:content-box!important;background-repeat:no-repeat!important"></a><br>
+<font color=#663300 face=Arial size=3><b>
+1268 South Ogden Street Denver, Colorado 80210 USA
+<br>
+<a href=mailto:rob@sherweng.com>email</a> &nbsp; &nbsp; Phone: </b></font>
+<font color=#008080 face="Arial Black" size=3>303-722-2257</font>
+&nbsp; &nbsp; <font color=#663300 face=Arial size=3><b>FAX: </b></font>
+<font color=#008080 face="Arial Black" size=3>303-744-8876</font><font color=#663300 face=Arial size=3><br>
+<font color=#000000 face=Arial size=3><b>
+9 a.m. - 5 p.m. MST Monday - Friday
+</b></font></font></p>
+<p align=left><font size=1>Updated 23 October 2018 tac
+</font></p>
