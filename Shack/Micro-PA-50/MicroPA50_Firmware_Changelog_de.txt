@@ -1,4 +1,12 @@
 
+11. Oktober 2025: V2.9.8
+Hinzugefügt: „MANU“-Modus für manuelle Bandumschaltung. Drücken Sie fünfmal Fn, um zwischen ICOM-XIEGU-YAESU-MANU zu wechseln. Dieser Modus basiert vollständig auf der manuellen LPF-Umschaltung. Die Verwendung des falschen Bandes kann den MOSFET und den LPF beschädigen oder zu übermäßigen Oberwellen führen. Verwenden Sie den „MANU“-Modus nicht, wenn Sie das der aktuellen Frequenz entsprechende Band nicht kennen. Bei Verwendung anderer Modi als „MANU“ wird der „AUTO“-Modus auch dann automatisch aktiviert, wenn das ACC-Steuerkabel nicht eingesteckt ist.
+Hinzugefügt: Automatisches Einschalten des Bildschirms bei erkannter Stromversorgung im ausgeschalteten Zustand. Wenn die automatische Bildschirmabschaltung aktiviert und als Stehwellenverhältnisanzeige verwendet wird, ist dies praktisch zur Überwachung von Leistung und Stehwellenverhältnis.
+Behoben: YAESU-Bandprotokollfehler
+
+
+
+
 6. Dezember 2023: V2.8.5
 Die 30-m- und 15-m-Bänder (BYP) sind nun standardmäßig deaktiviert. Durch achtmaliges Drücken der Fn-Taste werden die 30-m- und 15-m-Bänder aktiviert. Der Status wird aufgezeichnet, und nach dem Aus- und Wiedereinschalten ist keine weitere Bedienung erforderlich.
 Der uneingeschränkte Modus wurde durch achtmaliges Drücken der Fn-Taste aktiviert.
