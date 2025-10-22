@@ -1,0 +1,28 @@
+IC 705
+
+Portable Mukltiband Antennen:
+https://www.youtube.com/watch?v=B6Qgo_ug7yA
+- COMET HFJ-350-M 10 Band Teleskopantennen Set 149,-€
+- 
+
+Remote Software:
+- wfview (Windows/Linux/Mac-OS) OpenSource
+  https://wfview.org 
+  https://wfview.org/developers/how-to-compile-with-windows
+  https://www.youtube.com/watch?v=QPHo2QjgWlI
+   Virtual Com Port: https://eterlogic.com/Products.VSPE.html
+   Virtual Audio Cables: https://vb-audio.com/Cable/
+- RS-BA1 (Windows)          79,90€
+  https://www.icomeurope.com/wp-content/uploads/2021/03/RS-BA1_Version2_BRO_GER_20210309.pdf
+- SDR-Control Mibile (IOS)  49,99€
+
+Batterie-Anschluss-Systeme:
+- Anderson Power Pole System
+- XT60 awg12(115W) or awg10(180W)
+
+
+Manfrotto Pixi Evo
+
+
+
+Klapp-Ferrite
