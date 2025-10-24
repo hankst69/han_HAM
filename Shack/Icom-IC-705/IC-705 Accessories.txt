@@ -5,6 +5,14 @@ https://www.youtube.com/watch?v=B6Qgo_ug7yA
 - COMET HFJ-350-M 10 Band Teleskopantennen Set 149,-€
 - 
 
+
+https://www.pmr-funkgeraete.de/forum/threads/stationsantenne-10m-2m-70cm.26477
+
+
+Roy, W7EL, explains antenna modelling using EZNEC
+https://www.youtube.com/watch?v=WNPghbiJFbU
+
+
 Remote Software:
 - wfview (Windows/Linux/Mac-OS) OpenSource
   https://wfview.org 
@@ -21,8 +29,17 @@ Batterie-Anschluss-Systeme:
 - XT60 awg12(115W) or awg10(180W)
 
 
+Klapp-Ferrite
+
+
 Manfrotto Pixi Evo
 
 
+https://dc4ku.darc.de
+https://dc4ku.darc.de/IC-705.pdf
+https://dc4ku.darc.de/wfview.pdf
+https://dc4ku.darc.de/iPad_SDR-Control_App.pdf
+https://dc4ku.darc.de/RemoteTx_mit_Panadapter_DC4KU.pdf
 
-Klapp-Ferrite
+
+
