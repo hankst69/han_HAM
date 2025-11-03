@@ -1,6 +1,7 @@
 @echo off
 set "_nvnasvr_dir=%~dp0"
 set "_nvnasvr_dir=%cd%"
+rem dir "%_nvnasvr_dir%\nanovna-saver\src\NanoVNASaver\Windows\ui\about.*"
 if exist "%_nvnasvr_dir%\.nanovna-saver\Scripts\NanoVNASaver.exe" if exist "%_nvnasvr_dir%\nanovna-saver\src\NanoVNASaver\Windows\ui\about.py" goto :_nvnasvr_start
 
 rem create phyton venv and build NanoVnaSaver
@@ -26,7 +27,7 @@ call .nanovna-saver\Scripts\activate
 python -m pip install --upgrade pip
 
 cd nanovna-saver
-call python -m pip install -e .
+rem call python -m pip install -e .
 rem D:\GIT\HAM\nanovna-saver\src\NanoVNASaver\Windows\ui>pyside6-rcc.exe main.qrc -g python -o main_rc.py
 echo.
 echo pyside6-rcc.exe .\src\NanoVNASaver\Windows\ui\main.qrc -g python -o .\src\NanoVNASaver\Windows\ui\main_rc.py
@@ -42,6 +43,7 @@ goto :_nvnasvr_start
 :_nvnasvr_start
 cd /d "%_nvnasvr_dir%"
 call .nanovna-saver\Scripts\activate
+set "PYTHONPATH=%_nvnasvr_dir%\nanovna-saver\src\NanoVNASaver\Windows\ui"
 "%_nvnasvr_dir%\.nanovna-saver\Scripts\NanoVNASaver.exe"
 deactivate
 rem pause
