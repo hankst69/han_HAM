@@ -1,5 +1,0 @@
- NanoVNA-H4 (Zeenko model ZN401)
- S/N: H4-25081902
- hardware version: 4.4_ZK
- software version: 1.2.44
- 
