@@ -1,0 +1,37 @@
+Loading "C:\GIT\Maker\projects\han_HAM\Shack\tinySA\firmware\tinySA\tinySA_v1.4-210-ga1307eb.bin" ..
+
+113712 bytes loaded OK from C:\GIT\Maker\projects\han_HAM\Shack\tinySA\firmware\tinySA\tinySA_v1.4-210-ga1307eb.bin
+
+
+Firmware size: 113712 bytes
+
+Opening \\?\usb#vid_0483&pid_df11#fffffffeffff#{a5dcbf10-6530-11d2-901f-00c04fb951ed} 
+
+block size: 2048 
+
+vid: 0x0483 
+pid: 0xDF11 
+ver: 34.00 
+
+desc 1:STMicroelectronics
+desc 2:STM32  BOOTLOADER
+desc 3:FFFFFFFEFFFF
+desc 4:@Internal Flash  /0x08000000/064*0002Kg
+desc 5:@Option Bytes  /0x1FFFF800/01*016 e
+
+Flash addr: 0x08000000
+Flash size: 131072
+
+DFU device opened.
+
+erasing old firmware .. 
+ done 
+
+writing new firmware .. 
+ done 
+
+DFU device closed.
+
+The VNA now needs to be power cycled (turned off then on again).
+
+OnDeviceChange ..  event type: DBT_DEVICEREMOVECOMPLETE, device type: DBT_DEVTYP_DEVICEINTERFACE, name: \\?\USB#VID_0483&PID_DF11#FFFFFFFEFFFF#{a5dcbf10-6530-11d2-901f-00c04fb951ed} 
