@@ -1,0 +1,86 @@
+16mb download log:
+start read flash...please wait
+read flash address: 0x000
+read flash size: 0x1000000
+chip sync ...
+MAC: 1cdbd451c5a0
+Manufacturer: 46
+Device: 4018
+Status value: 0x200200
+Detected flash size: 16MB
+4096 (0 %)
+8192 (0 %)
+12288 (0 %)
+16384 (0 %)
+...
+16764928 (99 %)
+16769024 (99 %)
+16773120 (99 %)
+16777216 (100 %)
+Read 16777216 bytes at 0x00000000 in 1458.7 seconds (92.0 kbit/s)...
+
+1mb download log:
+start read flash...please wait
+read flash address: 0x000
+read flash size: 0x100000
+chip sync ...
+MAC: 1cdbd451c5a0
+Manufacturer: 46
+Device: 4018
+Status value: 0x200200
+Detected flash size: 16MB
+4096 (0 %)
+8192 (0 %)
+12288 (1 %)
+...
+1040384 (99 %)
+1044480 (99 %)
+1048576 (100 %)
+Read 1048576 bytes at 0x00000000 in 91.8 seconds (91.4 kbit/s)...
+
+8mb download log:
+start read flash...please wait
+read flash address: 0x000
+read flash size: 0x800000
+chip sync ...
+MAC: 1cdbd451c5a0
+Manufacturer: 46
+Device: 4018
+Status value: 0x200200
+Detected flash size: 16MB
+4096 (0 %)
+8192 (0 %)
+12288 (0 %)
+16384 (0 %)
+...
+8372224 (99 %)
+8376320 (99 %)
+8380416 (99 %)
+8384512 (99 %)
+8388608 (100 %)
+Read 8388608 bytes at 0x00000000 in 104.0 seconds (645.2 kbit/s)...
+
+
+2mb download log:
+ead flash address: 0x000
+read flash size: 0x200000
+chip sync ...
+MAC: 1cdbd451c5a0
+Manufacturer: 46
+Device: 4018
+Status value: 0x200200
+Detected flash size: 16MB
+4096 (0 %)
+8192 (0 %)
+12288 (0 %)
+16384 (0 %)
+...
+2072576 (98 %)
+2076672 (99 %)
+2080768 (99 %)
+2084864 (99 %)
+2088960 (99 %)
+2093056 (99 %)
+2097152 (100 %)
+Read 2097152 bytes at 0x00000000 in 26.0 seconds (646.4 kbit/s)...
+
