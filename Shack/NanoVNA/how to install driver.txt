@@ -1,0 +1,4 @@
+Windows XP, Vista, Seven, 8.x (x86 & x64 Windows platforms)
+ You can use the driver en.stsw-stm32102.zip or nanovna-cdc-acm.zip
+
+Windows® 10 use the native inbox driver.
