@@ -7,10 +7,13 @@ if exist "%_nvnasvr_dir%\.nanovna-saver\Scripts\NanoVNASaver.exe" if exist "%_nv
 rem create phyton venv and build NanoVnaSaver
 call python --version 2>nul
 if %ERRORLEVEL% equ 0 goto :_nvnasvr_install
-if exist "C:\Programs\Python313\python.exe" set "PATH=C:\Programs\Python313\Scripts;C:\Programs\Python313;%PATH%"
+if exist "C:\Python\Python314\python.exe" set "PATH=C:\Python\Python314\Scripts;C:\Python\Python314;%PATH%"
 call python --version 2>nul
 if %ERRORLEVEL% equ 0 goto :_nvnasvr_install
-if exist "C:\ProgramData\Anaconda3\python.exe" set "PATH=C:\ProgramData\Anaconda3\Scripts;C:\ProgramData\Anaconda3;%PATH%"
+if exist "C:\Python\Python313\python.exe" set "PATH=C:\Python\Python313\Scripts;C:\Python\Python313;%PATH%"
+call python --version 2>nul
+if %ERRORLEVEL% equ 0 goto :_nvnasvr_install
+if exist "C:\Programs\Python313\python.exe" set "PATH=C:\Programs\Python313\Scripts;C:\Programs\Python313;%PATH%"
 call python --version 2>nul
 if %ERRORLEVEL% equ 0 goto :_nvnasvr_install
 echo error: python not available
